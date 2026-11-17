@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-27",
+  "source_hashes": {
+    "assistant.py": "8b45bbe16c9704ae28d0783ced77debba83cf99de93151032914f9f4217bcaf4",
+    "navigation.py": "cd393e58a7311858a4902b54df4f340dea3bfa082c141539093e8ce46b068b68",
+    "workflow.py": "0f11ba9add69079f6c0cdf716a7c554d461cae3e2780dc695b3670f3075f3b36",
+    "palace_tasks.py": "6e043b79f97eec582200b44e0464491b50bed3d753241603fb05973ebb02136c",
+    "runtime_control.py": "eef313452d156bb731f078a726a28ff7a554735dd271b7d5de16397bf36710ad"
+  },
+  "notes": "No game task executed; only read current code and wrote teaching document."
+}

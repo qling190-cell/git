@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-26",
+  "page_count": 37,
+  "source_files": 15,
+  "physical_lines": 2821,
+  "offline_scripts_passed": 12,
+  "vector_emf_count": 4,
+  "pdf_raster_image_count": 0,
+  "editable_docx": true,
+  "font_style_check": "passed",
+  "all_source_hashes_unchanged": true,
+  "conversion": "Native Microsoft Word 16.0; skill render_docx.py conversion adapter and Poppler PNG review",
+  "visual_review": "All final pages reviewed in contact sheets; diagrams, references, tables and final continuation pages also inspected at full resolution",
+  "human_technical_approval": "pending",
+  "submission_ready": false,
+  "deliverables": [
+    {
+      "name": "太古仙尊每日助手源码分析报告.docx",
+      "bytes": 76904,
+      "sha256": "a07bbfe843be2092e0ef6a7e72320d8abdaabeb17f422419fd82ec64ae5834d1"
+    },
+    {
+      "name": "太古仙尊每日助手源码分析报告.pdf",
+      "bytes": 782426,
+      "sha256": "eae4d76cf0853beacc66383d816b7556d2711ff8029419e0264836c99bbe9a1e"
+    }
+  ]
+}

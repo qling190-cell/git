@@ -1,0 +1,372 @@
+{
+  "version": 6,
+  "source": "6d9bc3ae33f13a6a1305bf0ce995445b.mp4",
+  "sha256": "212b71f5400eb0b1ebde72a3850f63427078d67bc1385ea0b234922a3deb668a",
+  "realms": [
+    {
+      "code": "mortal",
+      "name": "人间",
+      "tasks": [
+        {
+          "code": "travel",
+          "name": "常羊山神游"
+        },
+        {
+          "code": "saint_beast",
+          "name": "凡间圣兽预约"
+        },
+        {
+          "code": "sect_deadland",
+          "name": "门派死地闯荡"
+        },
+        {
+          "code": "sect_herbs",
+          "name": "药谷种植收获"
+        },
+        {
+          "code": "practice",
+          "name": "门派练功与掌门传功"
+        },
+        {
+          "code": "sect_exchange",
+          "name": "门派每日丹药兑换"
+        },
+        {
+          "code": "freegift",
+          "name": "修真免费礼包"
+        },
+        {
+          "code": "signin",
+          "name": "签到与抽奖"
+        },
+        {
+          "code": "fishing_mortal",
+          "name": "幻海之心钓鱼"
+        }
+      ]
+    },
+    {
+      "code": "heaven",
+      "name": "仙界",
+      "tasks": [
+        {
+          "code": "guard",
+          "name": "全部护法"
+        },
+        {
+          "code": "quiz",
+          "name": "一键课训"
+        },
+        {
+          "code": "gamble",
+          "name": "市肆博戏"
+        },
+        {
+          "code": "jade",
+          "name": "购买玉盒"
+        },
+        {
+          "code": "creation_dew",
+          "name": "市场参天造化露（1个）"
+        },
+        {
+          "code": "enlightenment",
+          "name": "悟道室每日悟道"
+        },
+        {
+          "code": "lecture",
+          "name": "掌门大殿训话"
+        },
+        {
+          "code": "forbidden",
+          "name": "宗门禁地"
+        },
+        {
+          "code": "duel",
+          "name": "斗法"
+        },
+        {
+          "code": "tower",
+          "name": "通天塔每日奖励"
+        },
+        {
+          "code": "treasure",
+          "name": "降妖寻宝"
+        },
+        {
+          "code": "hunt",
+          "name": "仙猎"
+        },
+        {
+          "code": "demon",
+          "name": "魔域埋骨地扫荡"
+        },
+        {
+          "code": "smallworld",
+          "name": "小世界探索与事件"
+        },
+        {
+          "code": "sword",
+          "name": "论剑"
+        },
+        {
+          "code": "transfer",
+          "name": "检查宗门传功"
+        }
+      ]
+    },
+    {
+      "code": "void",
+      "name": "虚空",
+      "tasks": [
+        {
+          "code": "battle_exchange",
+          "name": "胜境之喻兑换（第一项1个）"
+        },
+        {
+          "code": "night",
+          "name": "已驻扎洞天夜猎（四处各15次）"
+        },
+        {
+          "code": "familycare",
+          "name": "仙祠指点与玄灵树"
+        },
+        {
+          "code": "family",
+          "name": "家族征收"
+        },
+        {
+          "code": "observatory",
+          "name": "观星台膜拜"
+        },
+        {
+          "code": "stars",
+          "name": "夺道奖励、修炼加速与供奉"
+        },
+        {
+          "code": "star_way",
+          "name": "游道每日修炼"
+        },
+        {
+          "code": "raid",
+          "name": "鸿胪台讨伐"
+        },
+        {
+          "code": "provisions",
+          "name": "珍馐坊采购"
+        },
+        {
+          "code": "gifts",
+          "name": "仙祠一键赠予"
+        },
+        {
+          "code": "pond",
+          "name": "游心塘钓鱼"
+        }
+      ]
+    },
+    {
+      "code": "yuanji",
+      "name": "元极",
+      "tasks": [
+        {
+          "code": "palace_lamp",
+          "name": "燃心灯收取"
+        },
+        {
+          "code": "palace_cultivate",
+          "name": "萦云楼同修领奖"
+        },
+        {
+          "code": "palace_court",
+          "name": "朝会殿朝议领奖"
+        },
+        {
+          "code": "palace_garden",
+          "name": "御木园状态与收获重种"
+        }
+      ]
+    }
+  ],
+  "video_timeline": [
+    {
+      "time": "00:03–00:15",
+      "realm": "人间",
+      "operation": "神游"
+    },
+    {
+      "time": "00:20–00:23",
+      "realm": "人间",
+      "operation": "门派死地三年闯荡"
+    },
+    {
+      "time": "00:24–00:31",
+      "realm": "人间",
+      "operation": "药谷收获与种植"
+    },
+    {
+      "time": "00:33–00:38",
+      "realm": "人间",
+      "operation": "普通练功与掌门传功"
+    },
+    {
+      "time": "00:39–00:44",
+      "realm": "人间",
+      "operation": "门派每日兑换"
+    },
+    {
+      "time": "00:45–00:50",
+      "realm": "人间",
+      "operation": "修真免费礼包"
+    },
+    {
+      "time": "00:59–01:07",
+      "realm": "仙界",
+      "operation": "全部护法、一键课训"
+    },
+    {
+      "time": "01:10–01:25",
+      "realm": "仙界",
+      "operation": "博戏、玉盒"
+    },
+    {
+      "time": "01:28–01:33",
+      "realm": "仙界",
+      "operation": "掌门训话"
+    },
+    {
+      "time": "01:38–02:08",
+      "realm": "仙界",
+      "operation": "宗门禁地领取与探索"
+    },
+    {
+      "time": "02:12–02:31",
+      "realm": "仙界",
+      "operation": "斗法"
+    },
+    {
+      "time": "02:33–02:35",
+      "realm": "仙界",
+      "operation": "通天塔每日奖励"
+    },
+    {
+      "time": "02:36–02:43",
+      "realm": "仙界",
+      "operation": "降妖寻宝、仙猎、魔域埋骨地"
+    },
+    {
+      "time": "02:44–02:47",
+      "realm": "仙界",
+      "operation": "小世界探秘"
+    },
+    {
+      "time": "02:54–02:56",
+      "realm": "虚空",
+      "operation": "胜境材料兑换"
+    },
+    {
+      "time": "02:59–03:10",
+      "realm": "虚空",
+      "operation": "夜猎四个已驻扎洞天"
+    },
+    {
+      "time": "03:13–03:17",
+      "realm": "虚空",
+      "operation": "仙祠指点、玄灵树"
+    },
+    {
+      "time": "03:18–03:21",
+      "realm": "虚空",
+      "operation": "家族征收"
+    },
+    {
+      "time": "03:23–03:27",
+      "realm": "虚空",
+      "operation": "观星台三处膜拜"
+    },
+    {
+      "time": "03:28–03:46",
+      "realm": "虚空",
+      "operation": "探星探索奖励与供奉（具体领取项按用户补充）"
+    },
+    {
+      "time": "03:47–04:08",
+      "realm": "虚空",
+      "operation": "星界每日天道运转"
+    },
+    {
+      "time": "04:15–04:18",
+      "realm": "元极",
+      "operation": "萦云楼同修领奖"
+    },
+    {
+      "time": "04:19–04:33",
+      "realm": "元极",
+      "operation": "朝会殿朝议领奖"
+    },
+    {
+      "time": "04:34–04:35",
+      "realm": "元极",
+      "operation": "燃心灯收取"
+    }
+  ],
+  "user_supplements": {
+    "stars": {
+      "seize": [
+        "夺道奖励",
+        "修炼加速"
+      ],
+      "tributes": [
+        "落日城",
+        "战争之门",
+        "斗技场",
+        "传承之地",
+        "不灭城"
+      ],
+      "action": "分别进入五处详情，点击领取供奉，确认结果后返回探索"
+    },
+    "smallworld": {
+      "exploration_limit": 3,
+      "claim_first": true,
+      "event_option": 2,
+      "allow": [
+        "材料",
+        "灵石"
+      ],
+      "forbid": [
+        "仙玉"
+      ],
+      "return": "右上角叉号返回小世界地图"
+    },
+    "palace": {
+      "order": [
+        "palace_lamp",
+        "palace_cultivate",
+        "palace_court",
+        "palace_garden"
+      ],
+      "parent": "palace_map",
+      "lamp_recheck_on_resume": true,
+      "note": "最新要求覆盖视频中天阙的原始先后；各任务之间只回天阙地图"
+    },
+    "star_forbidden": {
+      "enabled": false
+    },
+    "enlightenment": {
+      "daily": 1
+    },
+    "creation_dew": {
+      "daily": 1,
+      "price": 6000,
+      "currency": "功德"
+    },
+    "saint_beast": {
+      "daily": 1,
+      "action": "预约封印"
+    },
+    "star_way": {
+      "daily": 1,
+      "on_countdown": "退出，不等待，不点击神游天外"
+    }
+  }
+}

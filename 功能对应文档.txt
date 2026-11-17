@@ -1,0 +1,12 @@
+ 文件  修改内容 
+------
+ `workflow.py`  四区任务顺序、任务所属区域、页面层级 
+ `assistant.py`  程序入口、任务调度、截图和点击基础功能 
+ `navigation.py`  画面识别、境转、返回恢复、当天断点续跑 
+ `daily_tasks.py`  大部分原有每日任务 
+ `night_engine.py`  虚空夜猎：驻扎识别、15次设置、倒计时和领奖 
+ `star_rewards.py`  夺道奖励、修炼加速、五处供奉 
+ `video_tasks.py`  视频新增的门派、探星等任务 
+ `palace_tasks.py`  天阙同修、朝议、燃心灯、御木园 
+ `gift_tasks.py`  仙祠子嗣赠予 
+ `ui.py`  面板、按钮、下拉任务菜单 

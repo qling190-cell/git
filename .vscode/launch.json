@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "检查当前画面（不执行任务）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "C:\\Users\\21413\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+      "program": "${workspaceFolder}/assistant.py",
+      "args": ["inspect"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "调试单项任务（会操作游戏）",
+      "type": "debugpy",
+      "request": "launch",
+      "python": "C:\\Users\\21413\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+      "program": "${workspaceFolder}/assistant.py",
+      "args": ["${input:dailyTask}"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ],
+  "inputs": [
+    {
+      "id": "dailyTask",
+      "type": "pickString",
+      "description": "选择实际操作的单项任务；请先停止面板任务",
+      "options": ["palace_cultivate", "palace_court", "palace_lamp", "palace_garden", "smallworld", "star_forbidden", "stars", "night", "signin"],
+      "default": "palace_court"
+    }
+  ]
+}

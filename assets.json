@@ -1,0 +1,1406 @@
+{
+  "main_anchor": {
+    "box": [
+      148,
+      105,
+      311,
+      166
+    ],
+    "moving": false
+  },
+  "mortal_nav": {
+    "box": [
+      240,
+      958,
+      311,
+      1044
+    ],
+    "moving": false
+  },
+  "heaven_nav": {
+    "box": [
+      28,
+      958,
+      115,
+      1043
+    ],
+    "moving": false
+  },
+  "void_nav": {
+    "box": [
+      317,
+      954,
+      410,
+      1045
+    ],
+    "moving": false
+  },
+  "sign_panel": {
+    "box": [
+      93,
+      282,
+      363,
+      354
+    ],
+    "moving": false
+  },
+  "sign_entry": {
+    "box": [
+      140,
+      170,
+      184,
+      225
+    ],
+    "moving": false
+  },
+  "sign_ready": {
+    "box": [
+      155,
+      510,
+      281,
+      595
+    ],
+    "moving": false
+  },
+  "sign_done": {
+    "box": [
+      155,
+      510,
+      281,
+      595
+    ],
+    "moving": false
+  },
+  "sign_close": {
+    "box": [
+      603,
+      257,
+      642,
+      296
+    ],
+    "moving": false
+  },
+  "island": {
+    "box": [
+      115,
+      22,
+      232,
+      64
+    ],
+    "moving": false
+  },
+  "island_forbidden": {
+    "box": [
+      504,
+      179,
+      539,
+      284
+    ],
+    "moving": true
+  },
+  "island_teaching": {
+    "box": [
+      210,
+      198,
+      246,
+      290
+    ],
+    "moving": true
+  },
+  "island_market": {
+    "box": [
+      293,
+      370,
+      330,
+      463
+    ],
+    "moving": true
+  },
+  "forbidden": {
+    "box": [
+      104,
+      25,
+      250,
+      65
+    ],
+    "moving": false
+  },
+  "forbidden_progress_button": {
+    "box": [
+      231,
+      998,
+      307,
+      1038
+    ],
+    "moving": false
+  },
+  "forbidden_detail": {
+    "box": [
+      292,
+      164,
+      426,
+      201
+    ],
+    "moving": false
+  },
+  "forbidden_auto": {
+    "box": [
+      147,
+      1030,
+      298,
+      1077
+    ],
+    "moving": false
+  },
+  "forbidden_start": {
+    "box": [
+      421,
+      1030,
+      570,
+      1077
+    ],
+    "moving": false
+  },
+  "forbidden_progress": {
+    "box": [
+      288,
+      165,
+      434,
+      204
+    ],
+    "moving": false
+  },
+  "forbidden_empty_progress": {
+    "box": [
+      204,
+      624,
+      521,
+      656
+    ],
+    "moving": false
+  },
+  "forbidden_reward": {
+    "box": [
+      272,
+      440,
+      426,
+      490
+    ],
+    "moving": true
+  },
+  "forbidden_running": {
+    "box": [
+      245,
+      467,
+      474,
+      493
+    ],
+    "moving": false
+  },
+  "bag_full": {
+    "box": [
+      305,
+      520,
+      413,
+      545
+    ],
+    "moving": true
+  },
+  "forbidden_success": {
+    "box": [
+      197,
+      660,
+      521,
+      693
+    ],
+    "moving": false
+  },
+  "star": {
+    "box": [
+      222,
+      414,
+      251,
+      443
+    ],
+    "moving": true
+  },
+  "travel": {
+    "box": [
+      76,
+      17,
+      166,
+      60
+    ],
+    "moving": false
+  },
+  "wander_button": {
+    "box": [
+      170,
+      954,
+      257,
+      1045
+    ],
+    "moving": false
+  },
+  "wander_panel": {
+    "box": [
+      323,
+      177,
+      393,
+      215
+    ],
+    "moving": false
+  },
+  "wander_start": {
+    "box": [
+      285,
+      1020,
+      434,
+      1064
+    ],
+    "moving": false
+  },
+  "wander_running": {
+    "box": [
+      480,
+      1019,
+      604,
+      1057
+    ],
+    "moving": false
+  },
+  "wander_map": {
+    "box": [
+      156,
+      728,
+      344,
+      753
+    ],
+    "moving": false
+  },
+  "wander_food": {
+    "box": [
+      157,
+      779,
+      366,
+      804
+    ],
+    "moving": false
+  },
+  "heaven_arena": {
+    "box": [
+      211,
+      27,
+      345,
+      61
+    ],
+    "moving": false
+  },
+  "duel_tab": {
+    "box": [
+      362,
+      23,
+      498,
+      65
+    ],
+    "moving": false
+  },
+  "duel": {
+    "box": [
+      365,
+      24,
+      494,
+      65
+    ],
+    "moving": false
+  },
+  "duel_join": {
+    "box": [
+      260,
+      627,
+      461,
+      683
+    ],
+    "moving": false
+  },
+  "duel_joined": {
+    "box": [
+      291,
+      721,
+      429,
+      752
+    ],
+    "moving": false
+  },
+  "duel_fight": {
+    "box": [
+      239,
+      957,
+      313,
+      1044
+    ],
+    "moving": false
+  },
+  "battle_exit": {
+    "box": [
+      298,
+      849,
+      422,
+      888
+    ],
+    "moving": true
+  },
+  "duel_reward": {
+    "box": [
+      323,
+      309,
+      398,
+      345
+    ],
+    "moving": false
+  },
+  "duel_confirm": {
+    "box": [
+      286,
+      888,
+      433,
+      936
+    ],
+    "moving": false
+  },
+  "market": {
+    "box": [
+      126,
+      25,
+      202,
+      66
+    ],
+    "moving": false
+  },
+  "gamble_button": {
+    "box": [
+      330,
+      654,
+      389,
+      829
+    ],
+    "moving": false
+  },
+  "gamble": {
+    "box": [
+      326,
+      363,
+      394,
+      399
+    ],
+    "moving": false
+  },
+  "gamble_cost": {
+    "box": [
+      289,
+      739,
+      432,
+      765
+    ],
+    "moving": false
+  },
+  "gamble_start": {
+    "box": [
+      286,
+      781,
+      435,
+      826
+    ],
+    "moving": false
+  },
+  "teaching": {
+    "box": [
+      116,
+      24,
+      223,
+      64
+    ],
+    "moving": false
+  },
+  "questions": {
+    "box": [
+      290,
+      462,
+      428,
+      501
+    ],
+    "moving": false
+  },
+  "quiz": {
+    "box": [
+      327,
+      246,
+      395,
+      281
+    ],
+    "moving": false
+  },
+  "sword": {
+    "box": [
+      76,
+      18,
+      160,
+      61
+    ],
+    "moving": false
+  },
+  "sword_match": {
+    "box": [
+      286,
+      962,
+      431,
+      1006
+    ],
+    "moving": false
+  },
+  "sword_opponents": {
+    "box": [
+      302,
+      190,
+      416,
+      222
+    ],
+    "moving": false
+  },
+  "sword_challenge": {
+    "box": [
+      504,
+      306,
+      613,
+      339
+    ],
+    "moving": true
+  },
+  "guard": {
+    "box": [
+      262,
+      394,
+      458,
+      431
+    ],
+    "moving": false
+  },
+  "guard_one": {
+    "box": [
+      140,
+      824,
+      288,
+      866
+    ],
+    "moving": false
+  },
+  "mortal_sect": {
+    "box": [
+      75,
+      17,
+      168,
+      60
+    ],
+    "moving": false
+  },
+  "practice": {
+    "box": [
+      110,
+      301,
+      609,
+      350
+    ],
+    "moving": false
+  },
+  "practice_start": {
+    "box": [
+      152,
+      893,
+      302,
+      936
+    ],
+    "moving": false
+  },
+  "practice_cost": {
+    "box": [
+      174,
+      945,
+      281,
+      976
+    ],
+    "moving": false
+  },
+  "practice_running": {
+    "box": [
+      146,
+      898,
+      308,
+      935
+    ],
+    "moving": false
+  },
+  "journey": {
+    "box": [
+      113,
+      22,
+      202,
+      65
+    ],
+    "moving": false
+  },
+  "night": {
+    "box": [
+      325,
+      155,
+      398,
+      190
+    ],
+    "moving": false
+  },
+  "night_start": {
+    "box": [
+      284,
+      1048,
+      435,
+      1093
+    ],
+    "moving": false
+  },
+  "night_claim": {
+    "box": [
+      285,
+      984,
+      434,
+      1030
+    ],
+    "moving": false
+  },
+  "stars": {
+    "box": [
+      110,
+      21,
+      203,
+      63
+    ],
+    "moving": false
+  },
+  "stars_locked": {
+    "box": [
+      307,
+      284,
+      345,
+      405
+    ],
+    "moving": false
+  },
+  "star_rebuild": {
+    "box": [
+      277,
+      190,
+      449,
+      231
+    ],
+    "moving": false
+  },
+  "immortal_home": {
+    "box": [
+      111,
+      20,
+      186,
+      61
+    ],
+    "moving": false
+  },
+  "family": {
+    "box": [
+      86,
+      20,
+      236,
+      61
+    ],
+    "moving": false
+  },
+  "family_panel": {
+    "box": [
+      291,
+      194,
+      430,
+      231
+    ],
+    "moving": false
+  },
+  "family_claim": {
+    "box": [
+      286,
+      996,
+      434,
+      1039
+    ],
+    "moving": false
+  },
+  "family_start": {
+    "box": [
+      286,
+      996,
+      434,
+      1039
+    ],
+    "moving": false
+  },
+  "heaven_travel": {
+    "box": [
+      214,
+      20,
+      370,
+      62
+    ],
+    "moving": false
+  },
+  "secrets": {
+    "box": [
+      128,
+      24,
+      213,
+      67
+    ],
+    "moving": false
+  },
+  "hunt": {
+    "box": [
+      326,
+      176,
+      394,
+      212
+    ],
+    "moving": false
+  },
+  "hunt_start": {
+    "box": [
+      297,
+      1067,
+      422,
+      1100
+    ],
+    "moving": false
+  },
+  "hunt_cost": {
+    "box": [
+      210,
+      582,
+      516,
+      674
+    ],
+    "moving": false
+  },
+  "hunt_cancel": {
+    "box": [
+      165,
+      757,
+      287,
+      794
+    ],
+    "moving": false
+  },
+  "transfer_cost": {
+    "box": [
+      144,
+      795,
+      279,
+      826
+    ],
+    "moving": false
+  },
+  "guard_none": {
+    "box": [
+      251,
+      662,
+      469,
+      692
+    ],
+    "moving": false
+  },
+  "quiz_none": {
+    "box": [
+      294,
+      662,
+      419,
+      692
+    ],
+    "moving": false
+  },
+  "market_shop": {
+    "box": [
+      316,
+      132,
+      405,
+      169
+    ],
+    "moving": false
+  },
+  "jade_item": {
+    "box": [
+      91,
+      281,
+      167,
+      354
+    ],
+    "moving": false
+  },
+  "jade_exchange": {
+    "box": [
+      497,
+      299,
+      624,
+      337
+    ],
+    "moving": false
+  },
+  "fish_list": {
+    "box": [
+      77,
+      22,
+      161,
+      62
+    ],
+    "moving": false
+  },
+  "fish_heart": {
+    "box": [
+      598,
+      777,
+      632,
+      938
+    ],
+    "moving": false
+  },
+  "fish_done": {
+    "box": [
+      260,
+      829,
+      467,
+      861
+    ],
+    "moving": false
+  },
+  "fish_leave": {
+    "box": [
+      295,
+      909,
+      426,
+      945
+    ],
+    "moving": false
+  },
+  "sign_draw": {
+    "box": [
+      466,
+      518,
+      543,
+      550
+    ],
+    "moving": false
+  },
+  "tower": {
+    "box": [
+      276,
+      27,
+      367,
+      60
+    ],
+    "moving": false
+  },
+  "demon": {
+    "box": [
+      327,
+      207,
+      399,
+      248
+    ],
+    "moving": false
+  },
+  "demon_selected": {
+    "box": [
+      458,
+      890,
+      596,
+      939
+    ],
+    "moving": false
+  },
+  "raid": {
+    "box": [
+      108,
+      19,
+      190,
+      60
+    ],
+    "moving": false
+  },
+  "diplomacy": {
+    "box": [
+      87,
+      18,
+      215,
+      60
+    ],
+    "moving": false
+  },
+  "food_shop": {
+    "box": [
+      89,
+      18,
+      219,
+      60
+    ],
+    "moving": false
+  },
+  "food_buy": {
+    "box": [
+      296,
+      862,
+      424,
+      904
+    ],
+    "moving": false
+  },
+  "ancestral": {
+    "box": [
+      102,
+      19,
+      198,
+      61
+    ],
+    "moving": false
+  },
+  "ancestral_disabled": {
+    "box": [
+      548,
+      636,
+      587,
+      776
+    ],
+    "moving": false
+  },
+  "tree": {
+    "box": [
+      89,
+      18,
+      201,
+      61
+    ],
+    "moving": false
+  },
+  "pond": {
+    "box": [
+      307,
+      382,
+      407,
+      414
+    ],
+    "moving": false
+  },
+  "fish_cast": {
+    "box": [
+      281,
+      858,
+      436,
+      906
+    ],
+    "moving": false
+  },
+  "treasure": {
+    "box": [
+      320,
+      174,
+      403,
+      214
+    ],
+    "moving": false
+  },
+  "pond_fish_done": {
+    "box": [
+      260,
+      829,
+      467,
+      861
+    ],
+    "moving": false
+  },
+  "pond_fish_leave": {
+    "box": [
+      295,
+      909,
+      426,
+      945
+    ],
+    "moving": false
+  },
+  "food_soldout": {
+    "box": [
+      472,
+      147,
+      548,
+      174
+    ],
+    "moving": true
+  },
+  "island_hall": {
+    "box": [
+      367,
+      565,
+      394,
+      668
+    ],
+    "moving": true
+  },
+  "hall": {
+    "box": [
+      95,
+      19,
+      246,
+      68
+    ],
+    "moving": false
+  },
+  "hall_lecture": {
+    "box": [
+      341,
+      674,
+      379,
+      819
+    ],
+    "moving": false
+  },
+  "treasure_reward": {
+    "box": [
+      304,
+      437,
+      416,
+      468
+    ],
+    "moving": false
+  },
+  "treasure_reward_confirm": {
+    "box": [
+      285,
+      753,
+      436,
+      796
+    ],
+    "moving": false
+  },
+  "fish_entry": {
+    "box": [
+      472,
+      1004,
+      540,
+      1039
+    ],
+    "moving": false
+  },
+  "oppo_mortal_nav": {
+    "box": [
+      238,
+      1000,
+      302,
+      1040
+    ],
+    "moving": false
+  },
+  "oppo_heaven_nav": {
+    "box": [
+      38,
+      1000,
+      109,
+      1040
+    ],
+    "moving": false
+  },
+  "oppo_void_nav": {
+    "box": [
+      331,
+      1000,
+      398,
+      1040
+    ],
+    "moving": false
+  },
+  "yuanji_nav": {
+    "box": [
+      329,
+      1002,
+      392,
+      1039
+    ],
+    "moving": false
+  },
+  "palace_map": {
+    "box": [
+      139,
+      21,
+      244,
+      65
+    ],
+    "moving": false
+  },
+  "palace_cultivate_entry": {
+    "box": [
+      18,
+      357,
+      50,
+      441
+    ],
+    "moving": true
+  },
+  "palace_court_entry": {
+    "box": [
+      147,
+      135,
+      180,
+      214
+    ],
+    "moving": true
+  },
+  "palace_garden_entry": {
+    "box": [
+      328,
+      359,
+      359,
+      439
+    ],
+    "moving": true
+  },
+  "palace_cultivate": {
+    "box": [
+      132,
+      23,
+      237,
+      68
+    ],
+    "moving": false
+  },
+  "palace_cultivate_start": {
+    "box": [
+      312,
+      646,
+      408,
+      685
+    ],
+    "moving": false
+  },
+  "palace_cultivate_done": {
+    "box": [
+      227,
+      661,
+      495,
+      688
+    ],
+    "moving": false
+  },
+  "palace_court": {
+    "box": [
+      125,
+      23,
+      229,
+      64
+    ],
+    "moving": false
+  },
+  "palace_court_start": {
+    "box": [
+      208,
+      658,
+      244,
+      742
+    ],
+    "moving": false
+  },
+  "palace_court_done": {
+    "box": [
+      230,
+      662,
+      490,
+      690
+    ],
+    "moving": false
+  },
+  "palace_garden": {
+    "box": [
+      127,
+      20,
+      229,
+      67
+    ],
+    "moving": false
+  },
+  "palace_lamp_claim": {
+    "box": [
+      559,
+      842,
+      685,
+      882
+    ],
+    "moving": false
+  },
+  "oppo_sign_entry": {
+    "box": [
+      79,
+      177,
+      119,
+      229
+    ],
+    "moving": false
+  },
+  "oppo_island": {
+    "box": [
+      115,
+      22,
+      232,
+      64
+    ],
+    "moving": false
+  },
+  "oppo_sign_panel": {
+    "box": [
+      137,
+      203,
+      366,
+      261
+    ],
+    "moving": false
+  },
+  "oppo_sign_ready": {
+    "box": [
+      155,
+      510,
+      281,
+      595
+    ],
+    "moving": false
+  },
+  "oppo_sign_done": {
+    "box": [
+      155,
+      510,
+      281,
+      595
+    ],
+    "moving": false
+  },
+  "oppo_sign_close": {
+    "box": [
+      605,
+      258,
+      641,
+      296
+    ],
+    "moving": false
+  },
+  "oppo_sign_draw": {
+    "box": [
+      467,
+      519,
+      542,
+      549
+    ],
+    "moving": false
+  },
+  "oppo_main_guard": {
+    "box": [
+      35,
+      25,
+      78,
+      88
+    ],
+    "moving": false
+  },
+  "back_palace": {
+    "box": [
+      20,
+      20,
+      53,
+      60
+    ],
+    "moving": false
+  },
+  "back_classic": {
+    "box": [
+      20,
+      21,
+      48,
+      55
+    ],
+    "moving": false
+  },
+  "master_hint_close": {
+    "box": [
+      566,
+      426,
+      600,
+      461
+    ],
+    "moving": false
+  },
+  "master_hint_title": {
+    "box": [
+      325,
+      429,
+      390,
+      466
+    ],
+    "moving": false
+  },
+  "master_prepaid_button": {
+    "box": [
+      295,
+      778,
+      424,
+      820
+    ],
+    "moving": false
+  },
+  "modal_close_white": {
+    "box": [
+      566,
+      426,
+      600,
+      461
+    ],
+    "moving": true
+  },
+  "modal_close_red": {
+    "box": [
+      588,
+      253,
+      622,
+      285
+    ],
+    "moving": true
+  },
+  "back_cloud": {
+    "box": [
+      17,
+      19,
+      54,
+      65
+    ],
+    "moving": false
+  },
+  "sword_opponents_close": {
+    "box": [
+      611,
+      183,
+      642,
+      215
+    ],
+    "moving": false
+  },
+  "back_ancestral": {
+    "box": [
+      10,
+      5,
+      74,
+      70
+    ],
+    "moving": false
+  },
+  "night_stationed": {
+    "box": [
+      559,
+      415,
+      576,
+      469
+    ],
+    "moving": true
+  },
+  "oppo_night": {
+    "box": [
+      325,
+      155,
+      398,
+      190
+    ],
+    "moving": false
+  },
+  "night_close": {
+    "box": [
+      612,
+      150,
+      645,
+      185
+    ],
+    "moving": false
+  },
+  "back_journey": {
+    "box": [
+      10,
+      15,
+      65,
+      78
+    ],
+    "moving": false
+  },
+  "gift_dialog": {
+    "box": [
+      295,
+      270,
+      435,
+      310
+    ],
+    "moving": false
+  },
+  "sect_npc_close": {
+    "box": [
+      652,
+      16,
+      690,
+      57
+    ],
+    "moving": false
+  },
+  "seize_close": {
+    "box": [
+      606,
+      198,
+      643,
+      237
+    ],
+    "moving": true
+  },
+  "star_tribute_badge": {
+    "box": [
+      291,
+      431,
+      326,
+      481
+    ],
+    "moving": true
+  },
+  "star_tribute_badge_right": {
+    "box": [
+      557,
+      430,
+      594,
+      481
+    ],
+    "moving": true
+  },
+  "freegift_close": {
+    "box": [
+      610,
+      181,
+      648,
+      217
+    ],
+    "moving": true
+  },
+  "creation_dew_item": {
+    "box": [
+      93,
+      739,
+      167,
+      812
+    ],
+    "moving": true
+  }
+}

@@ -1,0 +1,3380 @@
+{
+  "snapshot_time": "2026-10-26T20:35:42.110845+08:00",
+  "files": [
+    {
+      "file": "assistant.py",
+      "sha256": "c9df240262a1cfd0f5e9c9c5b341e27daa42e2eb1bc90a918a1a8ffa7112bb1d",
+      "lines": 524,
+      "symbols": [
+        {
+          "name": "Bot",
+          "kind": "ClassDef",
+          "start": 41,
+          "end": 469,
+          "methods": [
+            {
+              "name": "__init__",
+              "start": 42,
+              "end": 69,
+              "doc": null,
+              "calls": [
+                "(ROOT / 'assets' / f'{n}.png').read_bytes",
+                "(ROOT / 'assets.json').read_text",
+                "(ROOT / 'config.json').read_text",
+                "PauseClock",
+                "RapidOCR",
+                "Stop",
+                "cv2.imdecode",
+                "dt.datetime.now",
+                "dt.datetime.now().strftime",
+                "dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date",
+                "dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date().isoformat",
+                "dt.timedelta",
+                "dt.timezone",
+                "json.loads",
+                "ledger_path.exists",
+                "ledger_path.parent.mkdir",
+                "ledger_path.read_text",
+                "np.frombuffer",
+                "re.fullmatch",
+                "self.cfg.get",
+                "self.cfg.get('asset_aliases', {}).items",
+                "self.ledger.get",
+                "self.out.mkdir"
+              ]
+            },
+            {
+              "name": "log",
+              "start": 71,
+              "end": 74,
+              "doc": null,
+              "calls": [
+                "(self.out / 'events.txt').open",
+                "dt.datetime.now",
+                "f.write",
+                "print"
+              ]
+            },
+            {
+              "name": "adb",
+              "start": 76,
+              "end": 82,
+              "doc": null,
+              "calls": [
+                "map",
+                "subprocess.check_output",
+                "time.gate"
+              ]
+            },
+            {
+              "name": "snap",
+              "start": 84,
+              "end": 95,
+              "doc": null,
+              "calls": [
+                "(ROOT / 'STOP').exists",
+                "Stop",
+                "any",
+                "cv2.imdecode",
+                "np.frombuffer",
+                "s.splitlines",
+                "self.adb",
+                "self.adb('shell', 'dumpsys', 'activity', 'activities').decode",
+                "self.save_frame",
+                "time.monotonic"
+              ]
+            },
+            {
+              "name": "save_frame",
+              "start": 97,
+              "end": 101,
+              "doc": null,
+              "calls": [
+                "(self.out / f'{self.seq:04}.jpg').write_bytes",
+                "cv2.imencode",
+                "cv2.imencode('.jpg', self.frame, [cv2.IMWRITE_JPEG_QUALITY, 90])[1].tobytes",
+                "time.monotonic"
+              ]
+            },
+            {
+              "name": "find",
+              "start": 103,
+              "end": 125,
+              "doc": null,
+              "calls": [
+                "cv2.matchTemplate",
+                "cv2.minMaxLoc",
+                "float",
+                "max",
+                "min",
+                "np.abs",
+                "np.mean",
+                "sample.astype",
+                "self.cfg.get",
+                "self.fallback_find",
+                "self.main_screen",
+                "self.video_page",
+                "t.astype"
+              ]
+            },
+            {
+              "name": "text",
+              "start": 127,
+              "end": 140,
+              "doc": null,
+              "calls": [
+                "cv2.resize",
+                "float",
+                "getattr",
+                "int",
+                "np.mean",
+                "self.ocr"
+              ]
+            },
+            {
+              "name": "words",
+              "start": 142,
+              "end": 143,
+              "doc": null,
+              "calls": [
+                "' '.join",
+                "self.text"
+              ]
+            },
+            {
+              "name": "line",
+              "start": 145,
+              "end": 148,
+              "doc": null,
+              "calls": [
+                "''.join",
+                "self.ocr"
+              ]
+            },
+            {
+              "name": "require",
+              "start": 150,
+              "end": 152,
+              "doc": null,
+              "calls": [
+                "ScreenError",
+                "self.find"
+              ]
+            },
+            {
+              "name": "tap",
+              "start": 154,
+              "end": 166,
+              "doc": null,
+              "calls": [
+                "(ROOT / 'STOP').exists",
+                "Stop",
+                "any",
+                "dt.datetime.now",
+                "dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date",
+                "dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date().isoformat",
+                "dt.timedelta",
+                "dt.timezone",
+                "s.splitlines",
+                "self.adb",
+                "self.adb('shell', 'dumpsys', 'activity', 'activities').decode",
+                "self.save_frame",
+                "time.gate",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "wait_words",
+              "start": 168,
+              "end": 175,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "predicate",
+                "self.require",
+                "self.snap",
+                "self.words",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "_v1_practice",
+              "start": 177,
+              "end": 188,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "self.back",
+                "self.cfg.get",
+                "self.click",
+                "self.close",
+                "self.find",
+                "self.mortal_sect_open",
+                "self.record",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "family",
+              "start": 190,
+              "end": 216,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "bool",
+                "int",
+                "re.search",
+                "self.back",
+                "self.cfg.get",
+                "self.click",
+                "self.close",
+                "self.find",
+                "self.home_open",
+                "self.line",
+                "self.log",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.text_button",
+                "self.wait",
+                "self.wait_gone",
+                "self.wait_words",
+                "self.words"
+              ]
+            },
+            {
+              "name": "transfer",
+              "start": 218,
+              "end": 224,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "self.back",
+                "self.close",
+                "self.record",
+                "self.tap",
+                "self.teaching_open",
+                "self.wait",
+                "self.words"
+              ]
+            },
+            {
+              "name": "click",
+              "start": 227,
+              "end": 236,
+              "doc": null,
+              "calls": [
+                "CLICK_LABELS.get",
+                "ScreenError",
+                "self.find",
+                "self.log",
+                "self.snap",
+                "self.tap",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "wait",
+              "start": 238,
+              "end": 246,
+              "doc": null,
+              "calls": [
+                "','.join",
+                "ScreenError",
+                "self.find",
+                "self.snap",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "wait_gone",
+              "start": 248,
+              "end": 254,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "self.find",
+                "self.require",
+                "self.snap",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "back",
+              "start": 256,
+              "end": 259,
+              "doc": null,
+              "calls": [
+                "self.require",
+                "self.retain_parent",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "close",
+              "start": 261,
+              "end": 262,
+              "doc": null,
+              "calls": [
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "_v1_realm",
+              "start": 264,
+              "end": 273,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "range",
+                "self.find",
+                "self.require",
+                "self.tap",
+                "self.wait",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "island",
+              "start": 275,
+              "end": 278,
+              "doc": null,
+              "calls": [
+                "self.find",
+                "self.realm",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "island_label",
+              "start": 280,
+              "end": 293,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "self.adb",
+                "self.find",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "record",
+              "start": 295,
+              "end": 298,
+              "doc": null,
+              "calls": [
+                "(self.out / 'report.json').write_text",
+                "dict",
+                "json.dumps",
+                "self.log",
+                "self.report.append"
+              ]
+            },
+            {
+              "name": "battle",
+              "start": 300,
+              "end": 307,
+              "doc": null,
+              "calls": [
+                "self.click",
+                "self.find",
+                "self.snap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "sword_remaining",
+              "start": 309,
+              "end": 316,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "int",
+                "re.search",
+                "self.line"
+              ]
+            },
+            {
+              "name": "sword_local_now",
+              "start": 318,
+              "end": 319,
+              "doc": null,
+              "calls": [
+                "dt.datetime.now",
+                "dt.timedelta",
+                "dt.timezone"
+              ]
+            },
+            {
+              "name": "sword_defer",
+              "start": 321,
+              "end": 324,
+              "doc": null,
+              "calls": [
+                "self.ledger_save",
+                "self.record",
+                "self.recover_to_main"
+              ]
+            },
+            {
+              "name": "sword_open",
+              "start": 326,
+              "end": 343,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "any",
+                "now.weekday",
+                "self.find",
+                "self.ledger_save",
+                "self.snap",
+                "self.sword_defer",
+                "self.sword_local_now",
+                "self.tap",
+                "self.wait",
+                "self.words",
+                "self.words((60, 120, 660, 1100)).replace",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "sword",
+              "start": 345,
+              "end": 365,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "range",
+                "self.back",
+                "self.click",
+                "self.find",
+                "self.log",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.sword_open",
+                "self.sword_remaining",
+                "self.wait",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "forbidden",
+              "start": 370,
+              "end": 428,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "bool",
+                "candidates.append",
+                "cv2.connectedComponentsWithStats",
+                "cv2.countNonZero",
+                "cv2.cvtColor",
+                "cv2.inRange",
+                "int",
+                "m.groups",
+                "map",
+                "max",
+                "min",
+                "np.array",
+                "range",
+                "re.search",
+                "self.back",
+                "self.click",
+                "self.close",
+                "self.find",
+                "self.island",
+                "self.island_label",
+                "self.line",
+                "self.log",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.wait",
+                "self.words",
+                "sum",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "_v1_duel",
+              "start": 431,
+              "end": 450,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "int",
+                "min",
+                "range",
+                "re.search",
+                "self.back",
+                "self.click",
+                "self.find",
+                "self.line",
+                "self.realm",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "gamble",
+              "start": 452,
+              "end": 469,
+              "doc": null,
+              "calls": [
+                "Stop",
+                "int",
+                "min",
+                "range",
+                "re.search",
+                "self.back",
+                "self.click",
+                "self.close",
+                "self.line",
+                "self.market_open",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.wait",
+                "time.sleep"
+              ]
+            }
+          ],
+          "calls": []
+        },
+        {
+          "name": "main",
+          "kind": "FunctionDef",
+          "start": 471,
+          "end": 517,
+          "methods": [],
+          "calls": [
+            "' → '.join",
+            "','.join",
+            "(ROOT / '.running.lock').open",
+            "(ROOT / 'PAUSE').unlink",
+            "(ROOT / 'PAUSED').unlink",
+            "(ROOT / 'STOP').exists",
+            "(ROOT / 'STOP').unlink",
+            "Bot",
+            "Stop",
+            "SystemExit",
+            "TASK_LABELS.get",
+            "any",
+            "argparse.ArgumentParser",
+            "bot.find",
+            "bot.log",
+            "bot.pending.values",
+            "bot.prepare_daily_progress",
+            "bot.record",
+            "bot.run_groups",
+            "bot.run_task",
+            "bot.snap",
+            "bot.words",
+            "dt.datetime.now",
+            "dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date",
+            "dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date().isoformat",
+            "dt.timedelta",
+            "dt.timezone",
+            "lock.fileno",
+            "lock.flush",
+            "lock.seek",
+            "lock.write",
+            "msvcrt.locking",
+            "parser.add_argument",
+            "parser.parse_args",
+            "print",
+            "range",
+            "str",
+            "time.monotonic",
+            "time.sleep"
+          ]
+        }
+      ],
+      "imports": [
+        "import argparse",
+        "import datetime as dt",
+        "import json",
+        "import msvcrt",
+        "import pathlib",
+        "import re",
+        "import subprocess",
+        "import sys",
+        "import time",
+        "import cv2",
+        "import numpy as np",
+        "from rapidocr_onnxruntime import RapidOCR",
+        "from daily_tasks import ApprovedTasks, TaskStop as Stop",
+        "from palace_tasks import PalaceTasks",
+        "from night_tasks import NightTasks",
+        "from gift_tasks import GiftTasks",
+        "from star_rewards import StarRewards",
+        "from hierarchy import Hierarchy",
+        "from video_tasks import VideoTasks",
+        "from navigation import Navigation, ScreenError, DAILY_GROUPS, FINISH_GROUPS, TASK_LABELS"
+      ],
+      "source_id": "S01"
+    },
+    {
+      "file": "daily.py",
+      "sha256": "634a1072498ef3ad0ea347b6714dbb90a0c1cdfd406b1fe24640c68c4513e614",
+      "lines": 8,
+      "symbols": [],
+      "imports": [
+        "import sys",
+        "from assistant import main"
+      ],
+      "source_id": "S02"
+    },
+    {
+      "file": "daily_tasks.py",
+      "sha256": "2842266f08e841d21ef518ca7f5bed5b1680242bb43755908cb8e0aa6a9441cd",
+      "lines": 500,
+      "symbols": [
+        {
+          "name": "TaskStop",
+          "kind": "ClassDef",
+          "start": 11,
+          "end": 11,
+          "methods": [],
+          "calls": []
+        },
+        {
+          "name": "ApprovedTasks",
+          "kind": "ClassDef",
+          "start": 13,
+          "end": 500,
+          "methods": [
+            {
+              "name": "lecture",
+              "start": 14,
+              "end": 25,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "self.back",
+                "self.click",
+                "self.island",
+                "self.island_label",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.record",
+                "self.wait",
+                "self.wait_words"
+              ]
+            },
+            {
+              "name": "guard",
+              "start": 27,
+              "end": 47,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "len",
+                "self.back",
+                "self.close",
+                "self.find",
+                "self.record",
+                "self.snap",
+                "self.tap",
+                "self.teaching_open",
+                "self.text",
+                "self.text_button",
+                "self.wait",
+                "self.words"
+              ]
+            },
+            {
+              "name": "quiz",
+              "start": 49,
+              "end": 65,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "self.back",
+                "self.close",
+                "self.find",
+                "self.record",
+                "self.snap",
+                "self.tap",
+                "self.teaching_open",
+                "self.text_button",
+                "self.wait",
+                "self.words"
+              ]
+            },
+            {
+              "name": "practice",
+              "start": 67,
+              "end": 78,
+              "doc": null,
+              "calls": [
+                "self._v1_practice",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.master_transfer_active",
+                "self.master_transfer_dialog",
+                "self.mortal_sect_open",
+                "self.practice_finish",
+                "self.record",
+                "self.snap",
+                "self.tap",
+                "self.text_button",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "master_transfer_active",
+              "start": 80,
+              "end": 84,
+              "doc": null,
+              "calls": [
+                "bool",
+                "re.search",
+                "self.find",
+                "self.words",
+                "self.words((400, 888, 600, 947)).replace"
+              ]
+            },
+            {
+              "name": "master_transfer_dialog",
+              "start": 86,
+              "end": 110,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "int",
+                "re.search",
+                "self.find",
+                "self.ledger_save",
+                "self.master_transfer_active",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.text_button",
+                "self.words",
+                "self.words((260, 827, 480, 862)).replace",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "ledger_save",
+              "start": 112,
+              "end": 115,
+              "doc": null,
+              "calls": [
+                "json.dumps",
+                "self.ledger_path.with_suffix",
+                "temporary.replace",
+                "temporary.write_text"
+              ]
+            },
+            {
+              "name": "home_open",
+              "start": 117,
+              "end": 120,
+              "doc": null,
+              "calls": [
+                "self.find",
+                "self.realm",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "familycare",
+              "start": 122,
+              "end": 135,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "self.ancestral_guidance",
+                "self.back",
+                "self.find",
+                "self.home_open",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.text_button",
+                "self.wait",
+                "self.words"
+              ]
+            },
+            {
+              "name": "ancestral_guidance",
+              "start": 137,
+              "end": 156,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "cv2.countNonZero",
+                "cv2.cvtColor",
+                "cv2.inRange",
+                "len",
+                "np.array",
+                "self.button_positions",
+                "self.find",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.log",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.wait",
+                "self.words",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "raid_remaining",
+              "start": 158,
+              "end": 161,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "int",
+                "re.search",
+                "s.replace",
+                "self.words"
+              ]
+            },
+            {
+              "name": "raid",
+              "start": 163,
+              "end": 178,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "range",
+                "self.back",
+                "self.find",
+                "self.home_open",
+                "self.raid_remaining",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.wait",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "provisions",
+              "start": 180,
+              "end": 225,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "after.isdigit",
+                "any",
+                "balance.isdigit",
+                "getattr",
+                "int",
+                "len",
+                "max",
+                "min",
+                "quota.replace",
+                "range",
+                "re.search",
+                "self.adb",
+                "self.back",
+                "self.click",
+                "self.find",
+                "self.home_open",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.line",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.text",
+                "self.wait",
+                "self.words",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "pond_remaining",
+              "start": 227,
+              "end": 230,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "int",
+                "re.search",
+                "s.replace",
+                "self.words"
+              ]
+            },
+            {
+              "name": "pond",
+              "start": 232,
+              "end": 244,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "int",
+                "range",
+                "self.back",
+                "self.click",
+                "self.close",
+                "self.home_open",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.pond_remaining",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "button_positions",
+              "start": 246,
+              "end": 278,
+              "doc": null,
+              "calls": [
+                "abs",
+                "column[j]['text'].replace",
+                "enumerate",
+                "hits.append",
+                "len",
+                "map",
+                "max",
+                "merged.append",
+                "next",
+                "range",
+                "row[j]['text'].replace",
+                "self.text",
+                "sorted",
+                "sum",
+                "v['text'].replace"
+              ]
+            },
+            {
+              "name": "text_button",
+              "start": 280,
+              "end": 283,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "len",
+                "self.button_positions",
+                "self.log",
+                "self.snap",
+                "self.tap"
+              ]
+            },
+            {
+              "name": "secrets_open",
+              "start": 285,
+              "end": 290,
+              "doc": null,
+              "calls": [
+                "self.find",
+                "self.heaven_travel_open",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "secrets_back",
+              "start": 292,
+              "end": 295,
+              "doc": null,
+              "calls": [
+                "getattr",
+                "self.back",
+                "self.require"
+              ]
+            },
+            {
+              "name": "tower",
+              "start": 297,
+              "end": 317,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "getattr",
+                "len",
+                "self.back",
+                "self.find",
+                "self.heaven_travel_open",
+                "self.record",
+                "self.reward_popup",
+                "self.snap",
+                "self.tap",
+                "self.text",
+                "self.text_button",
+                "self.wait",
+                "self.wait_words",
+                "self.words",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "demon",
+              "start": 319,
+              "end": 332,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "bool",
+                "int",
+                "re.search",
+                "s.replace",
+                "self.close",
+                "self.record",
+                "self.secrets_back",
+                "self.secrets_open",
+                "self.snap",
+                "self.tap",
+                "self.text_button",
+                "self.wait",
+                "self.wait_words",
+                "self.words",
+                "self.words((120, 590, 615, 670)).replace"
+              ]
+            },
+            {
+              "name": "hunt",
+              "start": 334,
+              "end": 366,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "bool",
+                "int",
+                "max",
+                "re.search",
+                "self.click",
+                "self.close",
+                "self.find",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.log",
+                "self.record",
+                "self.secrets_back",
+                "self.secrets_open",
+                "self.snap",
+                "self.tap",
+                "self.text_button",
+                "self.wait",
+                "self.wait_words",
+                "self.words",
+                "self.words((115, 575, 607, 685)).replace"
+              ]
+            },
+            {
+              "name": "treasure",
+              "start": 368,
+              "end": 394,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "bool",
+                "len",
+                "re.search",
+                "self.close",
+                "self.find",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.pause_animation",
+                "self.record",
+                "self.reward_popup",
+                "self.secrets_back",
+                "self.secrets_open",
+                "self.snap",
+                "self.tap",
+                "self.text",
+                "self.text_button",
+                "self.wait",
+                "self.wait_words",
+                "self.words"
+              ]
+            },
+            {
+              "name": "signin",
+              "start": 396,
+              "end": 412,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "after.replace",
+                "int",
+                "range",
+                "re.search",
+                "self.click",
+                "self.find",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.wait",
+                "self.words",
+                "time.sleep",
+                "value.replace"
+              ]
+            },
+            {
+              "name": "duel",
+              "start": 414,
+              "end": 418,
+              "doc": null,
+              "calls": [
+                "dt.datetime.now",
+                "dt.timedelta",
+                "dt.timezone",
+                "now.weekday",
+                "self._v1_duel",
+                "self.record"
+              ]
+            },
+            {
+              "name": "travel",
+              "start": 420,
+              "end": 450,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "int",
+                "min",
+                "range",
+                "self.back",
+                "self.cfg.get",
+                "self.click",
+                "self.close",
+                "self.find",
+                "self.ledger.get",
+                "self.ledger.pop",
+                "self.ledger_save",
+                "self.line",
+                "self.realm",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.wait",
+                "str",
+                "value.isdigit"
+              ]
+            },
+            {
+              "name": "jade",
+              "start": 452,
+              "end": 469,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "after.replace",
+                "int",
+                "price.replace",
+                "quota.replace",
+                "range",
+                "re.fullmatch",
+                "self.back",
+                "self.click",
+                "self.close",
+                "self.line",
+                "self.market_open",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "fishing_mortal",
+              "start": 471,
+              "end": 475,
+              "doc": null,
+              "calls": [
+                "self.back",
+                "self.click",
+                "self.fishing_rounds",
+                "self.realm",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "fishing_rounds",
+              "start": 477,
+              "end": 500,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "after.replace",
+                "int",
+                "range",
+                "re.search",
+                "s.replace",
+                "self.click",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.text",
+                "self.text_button",
+                "self.wait",
+                "self.words"
+              ]
+            }
+          ],
+          "calls": []
+        }
+      ],
+      "imports": [
+        "import datetime as dt",
+        "import json",
+        "import pathlib",
+        "import re",
+        "import time",
+        "import cv2",
+        "import numpy as np"
+      ],
+      "source_id": "S03"
+    },
+    {
+      "file": "forbidden_tasks.py",
+      "sha256": "f9e193568b8a1dbd66122340c075e97b02b287213effca37793cead07869061b",
+      "lines": 116,
+      "symbols": [
+        {
+          "name": "material_shortage",
+          "kind": "FunctionDef",
+          "start": 7,
+          "end": 8,
+          "methods": [],
+          "calls": [
+            "body.replace",
+            "body.replace('实力不足', '').replace"
+          ]
+        },
+        {
+          "name": "close_front",
+          "kind": "FunctionDef",
+          "start": 10,
+          "end": 24,
+          "methods": [],
+          "calls": [
+            "(shape & diagonal).sum",
+            "TaskStop",
+            "abs",
+            "bot.snap",
+            "bot.tap",
+            "cv2.bitwise_or",
+            "cv2.boundingRect",
+            "cv2.cvtColor",
+            "cv2.findContours",
+            "cv2.inRange",
+            "cv2.resize",
+            "hits.append",
+            "len",
+            "np.array",
+            "np.indices",
+            "shape.sum"
+          ]
+        },
+        {
+          "name": "forbidden_map",
+          "kind": "FunctionDef",
+          "start": 26,
+          "end": 28,
+          "methods": [],
+          "calls": [
+            "bot.words",
+            "bot.words((65, 0, 390, 100)).replace",
+            "bot.words((70, 120, 650, 370)).replace"
+          ]
+        },
+        {
+          "name": "run_forbidden",
+          "kind": "FunctionDef",
+          "start": 30,
+          "end": 116,
+          "methods": [],
+          "calls": [
+            "TaskStop",
+            "all",
+            "any",
+            "bot.back",
+            "bot.button_positions",
+            "bot.find",
+            "bot.ledger.get",
+            "bot.ledger_save",
+            "bot.pause_animation",
+            "bot.record",
+            "bot.reward_popup",
+            "bot.snap",
+            "bot.star_open",
+            "bot.tap",
+            "bot.video_button",
+            "bot.wait",
+            "bot.words",
+            "bot.words((50, 100, 670, 1200)).replace",
+            "bot.words((60, 300, 660, 1150)).replace",
+            "bot.words((60, 930, 660, 1060)).replace",
+            "bot.words((95, 450, 625, 800)).replace",
+            "close_front",
+            "forbidden_map",
+            "int",
+            "len",
+            "material_shortage",
+            "max",
+            "min",
+            "range",
+            "re.search"
+          ]
+        }
+      ],
+      "imports": [
+        "import re, time",
+        "import cv2",
+        "import numpy as np",
+        "from daily_tasks import TaskStop"
+      ],
+      "source_id": "S04"
+    },
+    {
+      "file": "gift_tasks.py",
+      "sha256": "a4556a2b42cf44320224ba475abdb6df6ec39768203a407ec1f04b2a7e413e30",
+      "lines": 101,
+      "symbols": [
+        {
+          "name": "GiftTasks",
+          "kind": "ClassDef",
+          "start": 9,
+          "end": 101,
+          "methods": [
+            {
+              "name": "gift_cards",
+              "start": 10,
+              "end": 28,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "abs",
+                "cards.append",
+                "cv2.resize",
+                "float",
+                "int",
+                "len",
+                "names[0]['text'].replace",
+                "np.mean",
+                "quality['text'].replace",
+                "re.fullmatch",
+                "self.ocr"
+              ]
+            },
+            {
+              "name": "gift_selected",
+              "start": 30,
+              "end": 37,
+              "doc": null,
+              "calls": [
+                "cv2.countNonZero",
+                "cv2.cvtColor",
+                "cv2.inRange",
+                "max",
+                "min",
+                "np.array"
+              ]
+            },
+            {
+              "name": "gifts",
+              "start": 39,
+              "end": 101,
+              "doc": null,
+              "calls": [
+                "'、'.join",
+                "TaskStop",
+                "any",
+                "chosen.add",
+                "int",
+                "len",
+                "range",
+                "re.search",
+                "self.adb",
+                "self.back",
+                "self.close",
+                "self.find",
+                "self.gift_cards",
+                "self.gift_selected",
+                "self.home_open",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.log",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.text_button",
+                "self.wait",
+                "self.words",
+                "self.words((500, 65, 715, 110)).replace",
+                "set",
+                "sorted",
+                "time.monotonic",
+                "time.sleep",
+                "tuple"
+              ]
+            }
+          ],
+          "calls": []
+        }
+      ],
+      "imports": [
+        "import re",
+        "import time",
+        "import cv2",
+        "import numpy as np",
+        "from daily_tasks import TaskStop"
+      ],
+      "source_id": "S05"
+    },
+    {
+      "file": "hierarchy.py",
+      "sha256": "2dac3cdb30fef2be33b07291c921c0c9052cf743239598eb750421200e811df0",
+      "lines": 40,
+      "symbols": [
+        {
+          "name": "Hierarchy",
+          "kind": "ClassDef",
+          "start": 2,
+          "end": 40,
+          "methods": [
+            {
+              "name": "retain_parent",
+              "start": 3,
+              "end": 5,
+              "doc": null,
+              "calls": [
+                "bool",
+                "getattr",
+                "self.find"
+              ]
+            },
+            {
+              "name": "mortal_sect_open",
+              "start": 7,
+              "end": 13,
+              "doc": null,
+              "calls": [
+                "hasattr",
+                "range",
+                "self.find",
+                "self.realm",
+                "self.recover_video_dialog",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "teaching_open",
+              "start": 15,
+              "end": 18,
+              "doc": null,
+              "calls": [
+                "self.find",
+                "self.island",
+                "self.island_label",
+                "self.snap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "market_open",
+              "start": 20,
+              "end": 23,
+              "doc": null,
+              "calls": [
+                "self.find",
+                "self.island",
+                "self.island_label",
+                "self.snap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "heaven_travel_open",
+              "start": 25,
+              "end": 28,
+              "doc": null,
+              "calls": [
+                "self.find",
+                "self.realm",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "journey_open",
+              "start": 30,
+              "end": 33,
+              "doc": null,
+              "calls": [
+                "self.find",
+                "self.realm",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "practice_finish",
+              "start": 35,
+              "end": 40,
+              "doc": null,
+              "calls": [
+                "self.back",
+                "self.click",
+                "self.close",
+                "self.find",
+                "self.snap",
+                "self.wait"
+              ]
+            }
+          ],
+          "calls": []
+        }
+      ],
+      "imports": [],
+      "source_id": "S06"
+    },
+    {
+      "file": "navigation.py",
+      "sha256": "87be8b32707c1e3ac1c164d400906cbfe57e871e7c8af7eb6933ac243ff1e434",
+      "lines": 258,
+      "symbols": [
+        {
+          "name": "ScreenError",
+          "kind": "ClassDef",
+          "start": 9,
+          "end": 10,
+          "methods": [],
+          "calls": []
+        },
+        {
+          "name": "Navigation",
+          "kind": "ClassDef",
+          "start": 33,
+          "end": 258,
+          "methods": [
+            {
+              "name": "continue_open_daily_task",
+              "start": 34,
+              "end": 42,
+              "doc": null,
+              "calls": [
+                "self.daily_progress['completed'].append",
+                "self.find",
+                "self.log",
+                "self.run_task",
+                "self.save_daily_progress"
+              ]
+            },
+            {
+              "name": "prepare_daily_progress",
+              "start": 44,
+              "end": 76,
+              "doc": null,
+              "calls": [
+                "TASK_LABELS.get",
+                "all",
+                "counts.values",
+                "data.get",
+                "data['completed'].remove",
+                "int",
+                "json.loads",
+                "len",
+                "self.ledger.get",
+                "self.ledger.get('star_tributes', {}).get",
+                "self.ledger_path.with_suffix",
+                "self.log",
+                "self.pending.update",
+                "self.progress_path.exists",
+                "self.progress_path.read_text",
+                "self.save_daily_progress",
+                "sum"
+              ]
+            },
+            {
+              "name": "save_daily_progress",
+              "start": 78,
+              "end": 84,
+              "doc": null,
+              "calls": [
+                "dict",
+                "hasattr",
+                "json.dumps",
+                "self.progress_path.with_suffix",
+                "temporary.replace",
+                "temporary.write_text"
+              ]
+            },
+            {
+              "name": "recover",
+              "start": 86,
+              "end": 87,
+              "doc": null,
+              "calls": [
+                "self.recover_to_main"
+              ]
+            },
+            {
+              "name": "main_screen",
+              "start": 89,
+              "end": 116,
+              "doc": null,
+              "calls": [
+                "cv2.countNonZero",
+                "cv2.cvtColor",
+                "cv2.inRange",
+                "getattr",
+                "groups.items",
+                "len",
+                "matches.append",
+                "np.array",
+                "self.cfg.get",
+                "self.find",
+                "self.words",
+                "self.words((0, 0, 435, 350), frame).replace",
+                "self.words((0, 940, 720, 1055), frame).replace",
+                "sum"
+              ]
+            },
+            {
+              "name": "fallback_find",
+              "start": 118,
+              "end": 137,
+              "doc": null,
+              "calls": [
+                "any",
+                "len",
+                "self.button_positions",
+                "self.cfg.get",
+                "self.find",
+                "self.main_screen",
+                "self.return_arrow_visible",
+                "self.text",
+                "self.words",
+                "self.words((75, 5, 350, 90), frame).replace",
+                "v['text'].replace"
+              ]
+            },
+            {
+              "name": "menu_visible",
+              "start": 139,
+              "end": 141,
+              "doc": null,
+              "calls": [
+                "self.words",
+                "sum"
+              ]
+            },
+            {
+              "name": "return_arrow_visible",
+              "start": 143,
+              "end": 163,
+              "doc": null,
+              "calls": [
+                "any",
+                "cv2.bitwise_and",
+                "cv2.bitwise_or",
+                "cv2.countNonZero",
+                "cv2.cvtColor",
+                "cv2.inRange",
+                "cv2.matchTemplate",
+                "cv2.minMaxLoc",
+                "np.array",
+                "self.find",
+                "yellow"
+              ]
+            },
+            {
+              "name": "recover_to_main",
+              "start": 165,
+              "end": 211,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "hasattr",
+                "next",
+                "range",
+                "self.cfg.get",
+                "self.click",
+                "self.find",
+                "self.log",
+                "self.main_screen",
+                "self.menu_visible",
+                "self.recover_video_dialog",
+                "self.return_arrow_visible",
+                "self.snap",
+                "self.tap",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "run_task",
+              "start": 213,
+              "end": 225,
+              "doc": null,
+              "calls": [
+                "any",
+                "getattr",
+                "getattr(self, task)",
+                "isinstance",
+                "range",
+                "self.log",
+                "self.record",
+                "self.recover_to_main",
+                "str"
+              ]
+            },
+            {
+              "name": "run_groups",
+              "start": 227,
+              "end": 258,
+              "doc": null,
+              "calls": [
+                "' → '.join",
+                "TASK_LABELS.get",
+                "completed.append",
+                "enumerate",
+                "getattr",
+                "hasattr",
+                "len",
+                "self.cfg.get",
+                "self.log",
+                "self.pending.get",
+                "self.realm",
+                "self.record",
+                "self.recover_to_main",
+                "self.run_task",
+                "self.save_daily_progress",
+                "shared_parent",
+                "str"
+              ]
+            }
+          ],
+          "calls": []
+        }
+      ],
+      "imports": [
+        "import time",
+        "import json",
+        "import cv2",
+        "import numpy as np",
+        "from daily_tasks import TaskStop",
+        "from workflow import DAILY_GROUPS, FINISH_GROUPS, WORKFLOW_VERSION, shared_parent, TRIBUTE_NAMES"
+      ],
+      "source_id": "S07"
+    },
+    {
+      "file": "night_engine.py",
+      "sha256": "3811bc548722be1338e77f8508d6e224bb910226bf6c9c3848c1255fc794dae1",
+      "lines": 194,
+      "symbols": [
+        {
+          "name": "destination_name",
+          "kind": "FunctionDef",
+          "start": 11,
+          "end": 12,
+          "methods": [],
+          "calls": [
+            "text.replace",
+            "text.replace(' ', '').replace",
+            "text.replace(' ', '').replace('埋骨凶间', '埋骨凶涧').replace"
+          ]
+        },
+        {
+          "name": "NightTasks",
+          "kind": "ClassDef",
+          "start": 15,
+          "end": 194,
+          "methods": [
+            {
+              "name": "night_buttons",
+              "start": 16,
+              "end": 59,
+              "doc": null,
+              "calls": [
+                "abs",
+                "any",
+                "cv2.boundingRect",
+                "cv2.contourArea",
+                "cv2.countNonZero",
+                "cv2.cvtColor",
+                "cv2.findContours",
+                "cv2.inRange",
+                "cv2.matchTemplate",
+                "cv2.minMaxLoc",
+                "destination_name",
+                "entries.append",
+                "markers.append",
+                "max",
+                "np.array",
+                "range",
+                "re.fullmatch",
+                "re.search",
+                "round",
+                "self.ledger.get",
+                "self.text",
+                "self.words",
+                "sorted"
+              ]
+            },
+            {
+              "name": "night_scroll",
+              "start": 61,
+              "end": 65,
+              "doc": null,
+              "calls": [
+                "self.adb",
+                "self.require",
+                "self.snap",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "night_discover",
+              "start": 67,
+              "end": 75,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "len",
+                "list",
+                "self.night_buttons",
+                "self.night_scroll",
+                "self.require",
+                "self.snap"
+              ]
+            },
+            {
+              "name": "night_locate",
+              "start": 77,
+              "end": 86,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "destination_name",
+                "next",
+                "self.night_buttons",
+                "self.night_scroll",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.wait_words"
+              ]
+            },
+            {
+              "name": "night_quota",
+              "start": 88,
+              "end": 93,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "int",
+                "re.search",
+                "self.require",
+                "self.snap",
+                "self.words",
+                "self.words((80, 235, 640, 320)).replace"
+              ]
+            },
+            {
+              "name": "night_running",
+              "start": 95,
+              "end": 97,
+              "doc": null,
+              "calls": [
+                "bool",
+                "re.search",
+                "self.words",
+                "self.words((95, 970, 620, 1140)).replace"
+              ]
+            },
+            {
+              "name": "night_rounds",
+              "start": 99,
+              "end": 102,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "int",
+                "self.line",
+                "self.line((270, 985, 365, 1033)).strip",
+                "text.isdigit"
+              ]
+            },
+            {
+              "name": "night_process",
+              "start": 104,
+              "end": 159,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "counts.get",
+                "counts.items",
+                "counts.values",
+                "cv2.countNonZero",
+                "cv2.cvtColor",
+                "cv2.inRange",
+                "int",
+                "item.get",
+                "max",
+                "min",
+                "np.array",
+                "range",
+                "self.click",
+                "self.find",
+                "self.ledger.setdefault",
+                "self.ledger_save",
+                "self.night_locate",
+                "self.night_quota",
+                "self.night_rounds",
+                "self.night_running",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.wait_gone",
+                "sum",
+                "time.monotonic",
+                "time.sleep",
+                "time.time",
+                "transaction.get",
+                "transactions.get",
+                "transactions.items",
+                "transactions.pop"
+              ]
+            },
+            {
+              "name": "night",
+              "start": 161,
+              "end": 194,
+              "doc": null,
+              "calls": [
+                "'、'.join",
+                "TaskStop",
+                "any",
+                "bool",
+                "counts.get",
+                "destination_name",
+                "errors.append",
+                "int",
+                "len",
+                "max",
+                "min",
+                "old.items",
+                "self.back",
+                "self.close",
+                "self.find",
+                "self.journey_open",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.log",
+                "self.night_discover",
+                "self.night_process",
+                "self.record",
+                "self.snap",
+                "self.tap",
+                "self.wait",
+                "statuses.values",
+                "str",
+                "sum"
+              ]
+            }
+          ],
+          "calls": []
+        }
+      ],
+      "imports": [
+        "import re",
+        "import time",
+        "import cv2",
+        "import numpy as np",
+        "from daily_tasks import TaskStop"
+      ],
+      "source_id": "S08"
+    },
+    {
+      "file": "night_tasks.py",
+      "sha256": "ce87eaae46fe1a0be06121b2b1ac19454e575fea74b84607a2ad5415f236c533",
+      "lines": 2,
+      "symbols": [],
+      "imports": [
+        "from night_engine import NightTasks"
+      ],
+      "source_id": "S09"
+    },
+    {
+      "file": "palace_tasks.py",
+      "sha256": "73fe6ffef0b5c351357222ca19f5db9ad6dfaa2b7377a60a7a9361aa6d64ccd1",
+      "lines": 285,
+      "symbols": [
+        {
+          "name": "PalaceTasks",
+          "kind": "ClassDef",
+          "start": 8,
+          "end": 285,
+          "methods": [
+            {
+              "name": "realm",
+              "start": 9,
+              "end": 36,
+              "doc": null,
+              "calls": [
+                "ScreenError",
+                "TaskStop",
+                "range",
+                "self._v1_realm",
+                "self.cfg.get",
+                "self.log",
+                "self.main_screen",
+                "self.menu_visible",
+                "self.recover_to_main",
+                "self.snap",
+                "self.tap",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "palace_open",
+              "start": 38,
+              "end": 42,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "self.cfg.get",
+                "self.find",
+                "self.realm",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "palace_finish",
+              "start": 44,
+              "end": 46,
+              "doc": null,
+              "calls": [
+                "getattr",
+                "self.back",
+                "self.require",
+                "self.snap"
+              ]
+            },
+            {
+              "name": "palace_map_button",
+              "start": 48,
+              "end": 57,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "self.adb",
+                "self.find",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "palace",
+              "start": 59,
+              "end": 68,
+              "doc": null,
+              "calls": [
+                "enumerate",
+                "len",
+                "self.cfg.get",
+                "self.record",
+                "self.run_task"
+              ]
+            },
+            {
+              "name": "palace_lamp",
+              "start": 70,
+              "end": 71,
+              "doc": null,
+              "calls": [
+                "self._palace_lamp",
+                "self.palace_finish",
+                "self.palace_open"
+              ]
+            },
+            {
+              "name": "lamp_amount",
+              "start": 73,
+              "end": 76,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "int",
+                "re.search",
+                "s.replace",
+                "self.words"
+              ]
+            },
+            {
+              "name": "_palace_lamp",
+              "start": 78,
+              "end": 89,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "self.click",
+                "self.lamp_amount",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "palace_cultivate",
+              "start": 91,
+              "end": 92,
+              "doc": null,
+              "calls": [
+                "self._palace_cultivate",
+                "self.palace_finish",
+                "self.palace_open"
+              ]
+            },
+            {
+              "name": "pause_animation",
+              "start": 94,
+              "end": 100,
+              "doc": null,
+              "calls": [
+                "(Path(__file__).resolve().parent / 'STOP').exists",
+                "Path",
+                "Path(__file__).resolve",
+                "TaskStop",
+                "max",
+                "min",
+                "self.snap",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "reward_button",
+              "start": 102,
+              "end": 108,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "len",
+                "self.button_positions",
+                "self.find",
+                "self.snap"
+              ]
+            },
+            {
+              "name": "reward_popup",
+              "start": 110,
+              "end": 122,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "len",
+                "range",
+                "self.button_positions",
+                "self.find",
+                "self.pause_animation",
+                "self.snap",
+                "self.tap",
+                "self.wait",
+                "self.words"
+              ]
+            },
+            {
+              "name": "collect_palace_reward",
+              "start": 124,
+              "end": 144,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "self.find",
+                "self.ledger_save",
+                "self.log",
+                "self.palace_reward_popup",
+                "self.pause_animation",
+                "self.record",
+                "self.reward_button",
+                "self.snap",
+                "self.tap",
+                "self.wait",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "palace_reward_popup",
+              "start": 146,
+              "end": 165,
+              "doc": "A reward is confirmed only after tapping its actual confirmation.",
+              "calls": [
+                "TaskStop",
+                "any",
+                "len",
+                "self.button_positions",
+                "self.find",
+                "self.pause_animation",
+                "self.snap",
+                "self.tap",
+                "self.words",
+                "self.words((70, 200, 650, 1050)).replace",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "timed_palace_task",
+              "start": 167,
+              "end": 201,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "bool",
+                "float",
+                "max",
+                "self.back",
+                "self.click",
+                "self.collect_palace_reward",
+                "self.find",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.log",
+                "self.palace_map_button",
+                "self.pause_animation",
+                "self.record",
+                "self.snap",
+                "self.wait",
+                "self.words",
+                "self.words((75, 250, 650, 1050)).replace",
+                "time.monotonic",
+                "time.sleep",
+                "time.time"
+              ]
+            },
+            {
+              "name": "_palace_cultivate",
+              "start": 203,
+              "end": 204,
+              "doc": null,
+              "calls": [
+                "self.timed_palace_task"
+              ]
+            },
+            {
+              "name": "palace_court",
+              "start": 206,
+              "end": 207,
+              "doc": null,
+              "calls": [
+                "self._palace_court",
+                "self.palace_finish",
+                "self.palace_open"
+              ]
+            },
+            {
+              "name": "_palace_court",
+              "start": 209,
+              "end": 210,
+              "doc": null,
+              "calls": [
+                "self.timed_palace_task"
+              ]
+            },
+            {
+              "name": "palace_garden",
+              "start": 212,
+              "end": 213,
+              "doc": null,
+              "calls": [
+                "self._palace_garden",
+                "self.palace_finish",
+                "self.palace_open"
+              ]
+            },
+            {
+              "name": "garden_state",
+              "start": 215,
+              "end": 219,
+              "doc": null,
+              "calls": [
+                "int",
+                "re.search",
+                "self.require",
+                "self.snap",
+                "self.words",
+                "self.words((255, 1002, 536, 1047)).replace",
+                "self.words((485, 846, 652, 890)).replace"
+              ]
+            },
+            {
+              "name": "garden_action",
+              "start": 222,
+              "end": 230,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "len",
+                "matches.append",
+                "state.replace",
+                "state.replace('状态', '').replace",
+                "state.replace('状态', '').replace('：', '').replace",
+                "state.replace('状态', '').replace('：', '').replace(':', '').replace"
+              ]
+            },
+            {
+              "name": "garden_button",
+              "start": 232,
+              "end": 236,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "len",
+                "self.button_positions",
+                "self.require",
+                "self.snap",
+                "str"
+              ]
+            },
+            {
+              "name": "garden_replant",
+              "start": 238,
+              "end": 251,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "self.find",
+                "self.garden_button",
+                "self.ledger_save",
+                "self.pause_animation",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.tap",
+                "self.text_button",
+                "self.wait",
+                "self.words"
+              ]
+            },
+            {
+              "name": "_palace_garden",
+              "start": 253,
+              "end": 285,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "cv2.countNonZero",
+                "cv2.cvtColor",
+                "cv2.inRange",
+                "np.array",
+                "self.back",
+                "self.garden_action",
+                "self.garden_button",
+                "self.garden_replant",
+                "self.garden_state",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.palace_map_button",
+                "self.pause_animation",
+                "self.record",
+                "self.reward_popup",
+                "self.tap",
+                "self.text_button",
+                "self.wait",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            }
+          ],
+          "calls": []
+        }
+      ],
+      "imports": [
+        "import re",
+        "import time",
+        "from daily_tasks import TaskStop",
+        "from workflow import PALACE_TASKS"
+      ],
+      "source_id": "S10"
+    },
+    {
+      "file": "runtime_control.py",
+      "sha256": "eef313452d156bb731f078a726a28ff7a554735dd271b7d5de16397bf36710ad",
+      "lines": 39,
+      "symbols": [
+        {
+          "name": "PauseClock",
+          "kind": "ClassDef",
+          "start": 6,
+          "end": 39,
+          "methods": [
+            {
+              "name": "__init__",
+              "start": 7,
+              "end": 10,
+              "doc": null,
+              "calls": [
+                "pathlib.Path"
+              ]
+            },
+            {
+              "name": "gate",
+              "start": 12,
+              "end": 26,
+              "doc": null,
+              "calls": [
+                "(self.root / 'PAUSE').exists",
+                "(self.root / 'PAUSED').unlink",
+                "(self.root / 'PAUSED').write_text",
+                "(self.root / 'STOP').exists",
+                "check_stop",
+                "self.stop_type",
+                "wall_time.monotonic",
+                "wall_time.sleep"
+              ]
+            },
+            {
+              "name": "monotonic",
+              "start": 28,
+              "end": 30,
+              "doc": null,
+              "calls": [
+                "self.gate",
+                "wall_time.monotonic"
+              ]
+            },
+            {
+              "name": "sleep",
+              "start": 32,
+              "end": 37,
+              "doc": null,
+              "calls": [
+                "max",
+                "min",
+                "self.monotonic",
+                "wall_time.sleep"
+              ]
+            },
+            {
+              "name": "__getattr__",
+              "start": 39,
+              "end": 39,
+              "doc": null,
+              "calls": [
+                "getattr"
+              ]
+            }
+          ],
+          "calls": []
+        }
+      ],
+      "imports": [
+        "import pathlib",
+        "import time as wall_time"
+      ],
+      "source_id": "S11"
+    },
+    {
+      "file": "star_rewards.py",
+      "sha256": "115ca075921762bfec4689d586ac5817a9ee45d39a210b66c6233b4efc021e85",
+      "lines": 147,
+      "symbols": [
+        {
+          "name": "tribute_name",
+          "kind": "FunctionDef",
+          "start": 9,
+          "end": 16,
+          "methods": [],
+          "calls": [
+            "len",
+            "re.fullmatch",
+            "sum",
+            "text.replace",
+            "text.replace(' ', '').replace",
+            "text.replace(' ', '').replace('傳', '传').replace",
+            "zip"
+          ]
+        },
+        {
+          "name": "StarRewards",
+          "kind": "ClassDef",
+          "start": 19,
+          "end": 147,
+          "methods": [
+            {
+              "name": "tribute_panel_name",
+              "start": 20,
+              "end": 24,
+              "doc": null,
+              "calls": [
+                "self.text",
+                "tribute_name"
+              ]
+            },
+            {
+              "name": "wait_tribute_panel",
+              "start": 26,
+              "end": 32,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "self.snap",
+                "self.tribute_panel_name",
+                "self.words",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "seize_panel_open",
+              "start": 34,
+              "end": 36,
+              "doc": null,
+              "calls": [
+                "self.words",
+                "self.words((100, 950, 625, 1055)).replace"
+              ]
+            },
+            {
+              "name": "seize_boost_active",
+              "start": 38,
+              "end": 41,
+              "doc": null,
+              "calls": [
+                "bool",
+                "int",
+                "re.search",
+                "self.words",
+                "self.words((120, 840, 610, 940)).replace"
+              ]
+            },
+            {
+              "name": "seize_rewards",
+              "start": 43,
+              "end": 76,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.record",
+                "self.require",
+                "self.seize_boost_active",
+                "self.seize_panel_open",
+                "self.snap",
+                "self.star_open",
+                "self.tap",
+                "self.tribute_panel_name",
+                "self.video_button",
+                "self.video_close",
+                "self.video_wait",
+                "self.words",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "seize",
+              "start": 78,
+              "end": 79,
+              "doc": null,
+              "calls": [
+                "self.back",
+                "self.seize_rewards"
+              ]
+            },
+            {
+              "name": "star_tribute_targets",
+              "start": 81,
+              "end": 101,
+              "doc": null,
+              "calls": [
+                "abs",
+                "any",
+                "cv2.matchTemplate",
+                "cv2.minMaxLoc",
+                "max",
+                "range",
+                "round",
+                "self.text",
+                "self.words",
+                "sorted",
+                "targets.append",
+                "tribute_name"
+              ]
+            },
+            {
+              "name": "star_tributes",
+              "start": 103,
+              "end": 134,
+              "doc": null,
+              "calls": [
+                "'、'.join",
+                "TaskStop",
+                "all",
+                "any",
+                "bool",
+                "checked.add",
+                "done.get",
+                "range",
+                "self.adb",
+                "self.collect_tribute",
+                "self.find",
+                "self.ledger.setdefault",
+                "self.pause_animation",
+                "self.record",
+                "self.require",
+                "self.snap",
+                "self.star_tribute_targets",
+                "self.tap",
+                "self.tribute_panel_name",
+                "self.video_close",
+                "self.wait_tribute_panel",
+                "set",
+                "str",
+                "sum",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "collect_tribute",
+              "start": 136,
+              "end": 147,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "self.ledger.setdefault",
+                "self.ledger_save",
+                "self.pause_animation",
+                "self.record",
+                "self.reward_popup",
+                "self.snap",
+                "self.tribute_panel_name",
+                "self.video_button",
+                "self.video_close",
+                "self.video_wait",
+                "self.words"
+              ]
+            }
+          ],
+          "calls": []
+        }
+      ],
+      "imports": [
+        "import re",
+        "import time",
+        "import cv2",
+        "import numpy as np",
+        "from daily_tasks import TaskStop",
+        "from workflow import TRIBUTE_NAMES"
+      ],
+      "source_id": "S12"
+    },
+    {
+      "file": "ui.py",
+      "sha256": "bb3411d418651bbdd3d07e121bad7af0d0d139ac8de17161d2132b4be77636b1",
+      "lines": 182,
+      "symbols": [
+        {
+          "name": "App",
+          "kind": "ClassDef",
+          "start": 61,
+          "end": 174,
+          "methods": [
+            {
+              "name": "__init__",
+              "start": 62,
+              "end": 97,
+              "doc": null,
+              "calls": [
+                "(ROOT / 'config.json').read_text",
+                "body.pack",
+                "cfg.get",
+                "cfg.get('channel', 'vivo').upper",
+                "json.loads",
+                "list",
+                "opts.pack",
+                "queue.Queue",
+                "row.pack",
+                "self.output.insert",
+                "self.output.pack",
+                "self.pause_btn.pack",
+                "self.resume_btn.pack",
+                "self.root.after",
+                "self.root.geometry",
+                "self.root.protocol",
+                "self.root.title",
+                "self.save_status",
+                "self.start_btn.pack",
+                "self.stop_btn.pack",
+                "str",
+                "tk.BooleanVar",
+                "tk.StringVar",
+                "tk.Text",
+                "tk.Tk",
+                "ttk.Button",
+                "ttk.Button(row, text='打开运行记录', command=self.open_logs).pack",
+                "ttk.Checkbutton",
+                "ttk.Checkbutton(body, text='自动收尾：每5分钟检查倒计时，最长24小时（不跨日期）；请保持游戏在主界面', variable=self.watch).pack",
+                "ttk.Checkbutton(opts, text='允许博戏消耗灵石（每次2000，每日最多10次）', variable=self.gamble).grid",
+                "ttk.Checkbutton(opts, text='允许神游消耗食物（每轮400）', variable=self.food).grid",
+                "ttk.Checkbutton(opts, text='允许门派练功消耗1000灵石', variable=self.practice).grid",
+                "ttk.Combobox",
+                "ttk.Combobox(row, textvariable=self.task, values=list(TASKS), state='readonly', width=20).pack",
+                "ttk.Frame",
+                "ttk.Label",
+                "ttk.Label(body, text='太古仙尊 · 每日助手 v5.0 · 视频顺序版', font=('Microsoft YaHei UI', 19, 'bold')).pack",
+                "ttk.Label(body, text='执行顺序：人间 → 仙界 → 虚空 → 元极；识别失败先返回主界面再检查').pack",
+                "ttk.Label(body, text='按补充清单执行玉盒、仙猎及指定仙居采购；不充值、不购买额外次数。').pack",
+                "ttk.Label(body, text=f\"{cfg.get('channel', 'vivo').upper()} 版 · 雷电 720×1280 · 当前角色：{cfg.get('account_label', '原实验号')}\", font=('Microsoft YaHei UI', 10)).pack",
+                "ttk.Label(body, textvariable=self.status).pack",
+                "ttk.Label(opts, text='每日目标').grid",
+                "ttk.LabelFrame",
+                "ttk.Spinbox",
+                "ttk.Spinbox(opts, from_=1, to=300, textvariable=self.rounds, width=6).grid"
+              ]
+            },
+            {
+              "name": "resume",
+              "start": 99,
+              "end": 102,
+              "doc": null,
+              "calls": [
+                "self.proc.poll",
+                "self.start",
+                "self.task.set"
+              ]
+            },
+            {
+              "name": "start",
+              "start": 104,
+              "end": 125,
+              "doc": null,
+              "calls": [
+                "(ROOT / 'config.json').read_text",
+                "(ROOT / 'config.json').write_text",
+                "ValueError",
+                "cfg.update",
+                "cmd.append",
+                "int",
+                "json.dumps",
+                "json.loads",
+                "messagebox.showerror",
+                "self.food.get",
+                "self.gamble.get",
+                "self.messages.put",
+                "self.pause_btn.configure",
+                "self.practice.get",
+                "self.proc.poll",
+                "self.proc.wait",
+                "self.resume_btn.configure",
+                "self.rounds.get",
+                "self.save_status",
+                "self.start_btn.configure",
+                "self.status.set",
+                "self.stop_btn.configure",
+                "self.task.get",
+                "self.watch.get",
+                "str",
+                "subprocess.Popen",
+                "threading.Thread",
+                "threading.Thread(target=read, daemon=True).start"
+              ]
+            },
+            {
+              "name": "pause",
+              "start": 127,
+              "end": 139,
+              "doc": null,
+              "calls": [
+                "(ROOT / 'PAUSE').unlink",
+                "(ROOT / 'PAUSE').write_text",
+                "self.pause_btn.configure",
+                "self.proc.poll",
+                "self.save_status",
+                "self.status.set",
+                "self.task.get"
+              ]
+            },
+            {
+              "name": "stop",
+              "start": 141,
+              "end": 147,
+              "doc": null,
+              "calls": [
+                "(ROOT / 'PAUSE').unlink",
+                "(ROOT / 'STOP').write_text",
+                "self.proc.poll",
+                "self.proc.terminate",
+                "self.save_status",
+                "self.status.set"
+              ]
+            },
+            {
+              "name": "save_status",
+              "start": 149,
+              "end": 152,
+              "doc": null,
+              "calls": [
+                "(ROOT / 'ui-state.json').write_text",
+                "json.dumps",
+                "os.getpid",
+                "self.task.get",
+                "self.watch.get"
+              ]
+            },
+            {
+              "name": "poll",
+              "start": 154,
+              "end": 167,
+              "doc": null,
+              "calls": [
+                "(ROOT / 'PAUSED').exists",
+                "isinstance",
+                "self.messages.empty",
+                "self.messages.get",
+                "self.output.insert",
+                "self.output.see",
+                "self.pause_btn.configure",
+                "self.proc.poll",
+                "self.resume_btn.configure",
+                "self.root.after",
+                "self.save_status",
+                "self.start_btn.configure",
+                "self.status.set",
+                "self.stop_btn.configure"
+              ]
+            },
+            {
+              "name": "open_logs",
+              "start": 169,
+              "end": 171,
+              "doc": null,
+              "calls": [
+                "(ROOT / 'logs').mkdir",
+                "os.startfile",
+                "str"
+              ]
+            },
+            {
+              "name": "close",
+              "start": 173,
+              "end": 174,
+              "doc": null,
+              "calls": [
+                "self.root.destroy",
+                "self.stop"
+              ]
+            }
+          ],
+          "calls": []
+        }
+      ],
+      "imports": [
+        "import json",
+        "import pathlib",
+        "import queue",
+        "import subprocess",
+        "import sys",
+        "import threading",
+        "import tkinter as tk",
+        "from tkinter import ttk, messagebox"
+      ],
+      "source_id": "S13"
+    },
+    {
+      "file": "video_tasks.py",
+      "sha256": "0a317a5a86f912dd8b2c8aadfafa10a40bd7996298e6a0be94f6d4fb6aa7ed5f",
+      "lines": 376,
+      "symbols": [
+        {
+          "name": "VideoTasks",
+          "kind": "ClassDef",
+          "start": 10,
+          "end": 376,
+          "methods": [
+            {
+              "name": "recover_video_dialog",
+              "start": 11,
+              "end": 40,
+              "doc": null,
+              "calls": [
+                "any",
+                "close_front",
+                "forbidden_map",
+                "hasattr",
+                "self.freegift_panel",
+                "self.reward_popup",
+                "self.tribute_panel_name",
+                "self.video_close",
+                "self.video_page",
+                "self.words",
+                "self.words((180, 60, 540, 260)).replace",
+                "self.words((60, 0, 660, 1200)).replace",
+                "self.words((80, 100, 650, 1020)).replace"
+              ]
+            },
+            {
+              "name": "video_page",
+              "start": 42,
+              "end": 60,
+              "doc": null,
+              "calls": [
+                "any",
+                "forbidden_map",
+                "len",
+                "min",
+                "self.words",
+                "self.words((0, 0, 720, 1000), frame).replace",
+                "self.words((0, 0, 720, 120), frame).replace",
+                "self.words((0, 0, 720, 165), frame).replace",
+                "self.words((65, 5, 325, 95), frame).replace",
+                "sum"
+              ]
+            },
+            {
+              "name": "video_wait",
+              "start": 62,
+              "end": 68,
+              "doc": null,
+              "calls": [
+                "' / '.join",
+                "TaskStop",
+                "any",
+                "self.snap",
+                "self.words",
+                "self.words(roi).replace",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "video_button",
+              "start": 70,
+              "end": 73,
+              "doc": null,
+              "calls": [
+                "' / '.join",
+                "'/'.join",
+                "TaskStop",
+                "len",
+                "self.button_positions",
+                "self.log",
+                "self.snap",
+                "self.tap",
+                "tuple"
+              ]
+            },
+            {
+              "name": "video_close",
+              "start": 75,
+              "end": 99,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "abs",
+                "candidates.append",
+                "cv2.bitwise_or",
+                "cv2.boundingRect",
+                "cv2.cvtColor",
+                "cv2.findContours",
+                "cv2.inRange",
+                "cv2.resize",
+                "len",
+                "np.array",
+                "np.count_nonzero",
+                "np.indices",
+                "self.find",
+                "self.snap",
+                "self.tap",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "sect_deadland",
+              "start": 101,
+              "end": 116,
+              "doc": null,
+              "calls": [
+                "re.search",
+                "self.back",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.mortal_sect_open",
+                "self.record",
+                "self.reward_popup",
+                "self.tap",
+                "self.video_button",
+                "self.video_close",
+                "self.video_wait"
+              ]
+            },
+            {
+              "name": "sect_herbs",
+              "start": 118,
+              "end": 142,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "re.search",
+                "self.back",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.mortal_sect_open",
+                "self.record",
+                "self.reward_popup",
+                "self.tap",
+                "self.video_button",
+                "self.video_close",
+                "self.video_wait"
+              ]
+            },
+            {
+              "name": "sect_exchange",
+              "start": 144,
+              "end": 162,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "min",
+                "self.back",
+                "self.button_positions",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.mortal_sect_open",
+                "self.record",
+                "self.tap",
+                "self.video_button",
+                "self.video_close",
+                "self.video_wait",
+                "self.words",
+                "self.words((90, 300, 630, 540)).replace"
+              ]
+            },
+            {
+              "name": "freegift_panel",
+              "start": 164,
+              "end": 165,
+              "doc": null,
+              "calls": [
+                "self.words",
+                "self.words((140, 130, 590, 325)).replace"
+              ]
+            },
+            {
+              "name": "freegift",
+              "start": 167,
+              "end": 200,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "len",
+                "self.button_positions",
+                "self.freegift_panel",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.log",
+                "self.pause_animation",
+                "self.realm",
+                "self.record",
+                "self.reward_popup",
+                "self.snap",
+                "self.tap",
+                "self.video_close",
+                "self.video_wait",
+                "self.words",
+                "self.words((90, 330, 630, 1140)).replace",
+                "time.monotonic",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "smallworld",
+              "start": 202,
+              "end": 212,
+              "doc": null,
+              "calls": [
+                "any",
+                "self.back",
+                "self.heaven_travel_open",
+                "self.ledger_save",
+                "self.smallworld_events",
+                "self.smallworld_explore",
+                "self.snap",
+                "self.tap",
+                "self.text",
+                "self.video_close",
+                "self.video_page",
+                "self.wait",
+                "v['text'].replace"
+              ]
+            },
+            {
+              "name": "smallworld_explore",
+              "start": 214,
+              "end": 254,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "bool",
+                "int",
+                "len",
+                "range",
+                "re.search",
+                "self.button_positions",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.pause_animation",
+                "self.record",
+                "self.reward_popup",
+                "self.snap",
+                "self.tap",
+                "self.video_button",
+                "self.video_close",
+                "self.video_wait",
+                "self.words",
+                "self.words((100, 400, 620, 930)).replace",
+                "self.words((80, 160, 650, 1130)).replace"
+              ]
+            },
+            {
+              "name": "smallworld_event_options",
+              "start": 256,
+              "end": 266,
+              "doc": null,
+              "calls": [
+                "boxes.append",
+                "cv2.boundingRect",
+                "cv2.cvtColor",
+                "cv2.findContours",
+                "cv2.inRange",
+                "np.array",
+                "sorted"
+              ]
+            },
+            {
+              "name": "smallworld_events",
+              "start": 268,
+              "end": 311,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "len",
+                "range",
+                "self.button_positions",
+                "self.log",
+                "self.pause_animation",
+                "self.record",
+                "self.reward_popup",
+                "self.smallworld_event_options",
+                "self.snap",
+                "self.tap",
+                "self.video_button",
+                "self.video_close",
+                "self.video_wait",
+                "self.words",
+                "self.words((100, 400, 620, 930)).replace",
+                "self.words(box).replace"
+              ]
+            },
+            {
+              "name": "battle_exchange",
+              "start": 313,
+              "end": 338,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "any",
+                "int",
+                "len",
+                "re.search",
+                "rows.get",
+                "self.back",
+                "self.button_positions",
+                "self.journey_open",
+                "self.ledger.setdefault",
+                "self.ledger_save",
+                "self.record",
+                "self.reward_popup",
+                "self.snap",
+                "self.tap",
+                "self.video_close",
+                "self.video_wait",
+                "self.wait",
+                "self.words",
+                "self.words((90, top, 640, bottom)).replace"
+              ]
+            },
+            {
+              "name": "star_open",
+              "start": 340,
+              "end": 344,
+              "doc": null,
+              "calls": [
+                "self.find",
+                "self.realm",
+                "self.snap",
+                "self.tap",
+                "self.video_button",
+                "self.wait"
+              ]
+            },
+            {
+              "name": "observatory",
+              "start": 346,
+              "end": 361,
+              "doc": null,
+              "calls": [
+                "TaskStop",
+                "len",
+                "self.back",
+                "self.button_positions",
+                "self.ledger.get",
+                "self.ledger_save",
+                "self.record",
+                "self.snap",
+                "self.star_open",
+                "self.tap",
+                "self.video_button",
+                "self.video_wait",
+                "self.wait",
+                "self.words",
+                "sorted",
+                "time.sleep"
+              ]
+            },
+            {
+              "name": "stars",
+              "start": 363,
+              "end": 370,
+              "doc": null,
+              "calls": [
+                "self.back",
+                "self.collect_tribute",
+                "self.ledger.get",
+                "self.seize_rewards",
+                "self.snap",
+                "self.star_tributes",
+                "self.tribute_panel_name"
+              ]
+            },
+            {
+              "name": "star_orbit",
+              "start": 372,
+              "end": 373,
+              "doc": null,
+              "calls": [
+                "self.record"
+              ]
+            },
+            {
+              "name": "star_forbidden",
+              "start": 375,
+              "end": 376,
+              "doc": null,
+              "calls": [
+                "run_forbidden"
+              ]
+            }
+          ],
+          "calls": []
+        }
+      ],
+      "imports": [
+        "import re",
+        "import time",
+        "import cv2",
+        "import numpy as np",
+        "from daily_tasks import TaskStop",
+        "from forbidden_tasks import run_forbidden, forbidden_map, close_front"
+      ],
+      "source_id": "S14"
+    },
+    {
+      "file": "workflow.py",
+      "sha256": "1d8bea80d2d68cbb155bebb382a60072acd71e1e9d7164b30c864c5a055d9b38",
+      "lines": 49,
+      "symbols": [
+        {
+          "name": "shared_parent",
+          "kind": "FunctionDef",
+          "start": 40,
+          "end": 49,
+          "methods": [],
+          "calls": [
+            "PARENTS.get",
+            "first.append",
+            "page.endswith"
+          ]
+        }
+      ],
+      "imports": [],
+      "source_id": "S15"
+    }
+  ],
+  "human_review": "pending",
+  "submission_ready": false
+}

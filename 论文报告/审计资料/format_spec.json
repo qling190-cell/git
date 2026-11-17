@@ -1,0 +1,16 @@
+{
+  "title_pt": 22,
+  "heading1_pt": 15,
+  "heading2_pt": 14,
+  "body_pt": 12,
+  "caption_reference_pt": 10.5,
+  "chinese_body": "宋体",
+  "chinese_heading": "黑体",
+  "latin": "Times New Roman",
+  "vector_diagrams": 4,
+  "source_file_count": 15,
+  "physical_lines": 2821,
+  "test_script_count": 12,
+  "human_review": "pending",
+  "submission_ready": false
+}

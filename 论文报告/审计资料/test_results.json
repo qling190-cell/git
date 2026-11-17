@@ -1,0 +1,74 @@
+[
+  {
+    "test": "test_contracts.py",
+    "exit_code": 0,
+    "elapsed_seconds": 2.047,
+    "output": "PASS: original tasks kept in their realms, acyclic hierarchy, no repeated root returns, pause/resume, v5 UI and handlers.\r\n"
+  },
+  {
+    "test": "test_waiting_states.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.343,
+    "output": "PASS: direct-start and confirmation treasure flows; exhausted hunt with grey start button.\r\n"
+  },
+  {
+    "test": "test_star_rewards.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.344,
+    "output": "PASS: both seize actions, active boost, daily dedup, five exact collect buttons, last-city scroll, resume only missing, old checkpoint migration.\r\n"
+  },
+  {
+    "test": "test_freegift.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.328,
+    "output": "PASS: missing entry skip, disappearing claimed tier, already-open paid tiers close, done panel close\r\n"
+  },
+  {
+    "test": "test_smallworld.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.36,
+    "output": "PASS: claim then explore, three-start cap, interrupted submission reconcile, native four options, premium second option blocked\r\n"
+  },
+  {
+    "test": "test_sword_schedule.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.578,
+    "output": "PASS: Monday before noon skip, noon open, explicit closed recovery, Tuesday unrestricted\r\n"
+  },
+  {
+    "test": "test_palace_order.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.328,
+    "output": "PASS: lamp first in both entry points; shared map throughout; one entry/exit; resume rechecks accumulated lamp\r\n"
+  },
+  {
+    "test": "test_palace_claim_v5.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.328,
+    "output": "PASS: court finish -> reward confirm; cultivate claim -> reward confirm; bottom buttons included; no button means no completion\r\n"
+  },
+  {
+    "test": "test_palace_real_screens.py",
+    "exit_code": 0,
+    "elapsed_seconds": 3.484,
+    "output": "PASS actual failing screenshots: both start buttons detected; reward history does not trigger modal handling\r\n"
+  },
+  {
+    "test": "test_star_forbidden.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.328,
+    "output": "PASS: orbit disabled, forbidden connected, material gift, shortage skips, narrative not shortage, battle and exit\r\n"
+  },
+  {
+    "test": "test_celestial_close.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.329,
+    "output": "PASS: supplied celestial modal screenshot X detected: (645, 55)\r\n"
+  },
+  {
+    "test": "test_v5.py",
+    "exit_code": 0,
+    "elapsed_seconds": 12.703,
+    "output": "night_selected_failed ['埋骨凶涧', '消匿残域', '陨神废墟', '无矩虚境']\r\nnight_oppo_stationed ['埋骨凶涧', '消匿残域', '陨神废墟', '无矩虚境']\r\nnight_oppo_latest ['埋骨凶涧', '消匿残域', '陨神废墟', '无矩虚境']\r\nPASS v5: screenshots, new appearance, all-four 60 rounds, reservations, claims, partial failure, video order and hierarchy.\r\n"
+  }
+]

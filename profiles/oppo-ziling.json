@@ -1,0 +1,30 @@
+{
+  "adb": "D:\\雷电\\leidian\\LDPlayer9\\adb.exe",
+  "device": "emulator-5554",
+  "package": "com.xyjx.hardtime.nearme.gamecenter",
+  "allow_food": true,
+  "wander_rounds": 300,
+  "allow_gamble_lingshi": true,
+  "gamble_limit": 10,
+  "forbidden_limit": 15,
+  "duel_limit": 5,
+  "allow_practice_lingshi": true,
+  "rules_version": 4,
+  "channel": "oppo",
+  "account_key": "oppo-ziling",
+  "realm_menu": true,
+  "asset_aliases": {
+    "mortal_nav": "oppo_mortal_nav",
+    "heaven_nav": "oppo_heaven_nav",
+    "void_nav": "oppo_void_nav",
+    "sign_entry": "oppo_sign_entry",
+    "island": "oppo_island",
+    "sign_panel": "oppo_sign_panel",
+    "sign_ready": "oppo_sign_ready",
+    "sign_done": "oppo_sign_done",
+    "sign_close": "oppo_sign_close",
+    "sign_draw": "oppo_sign_draw"
+  },
+  "account_label": "紫灵",
+  "build_revision": "4.1"
+}
