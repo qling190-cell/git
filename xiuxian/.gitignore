@@ -6,3 +6,7 @@ STOP
 ui-error.log
 .env
 .env.*
+ledger.json
+ledgers/
+ui-state.json
+发布包/

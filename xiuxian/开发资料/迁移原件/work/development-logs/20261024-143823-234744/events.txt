@@ -1,7 +1,0 @@
-14:38:27 点击 sword_match
-14:38:32 点击 sword_challenge
-14:38:56 点击 sword_match
-14:39:00 点击 sword_challenge
-14:39:12 点击 sword_match
-14:39:16 点击 sword_challenge
-14:39:48 [sword] 停止：论剑次数未减少，停止。
