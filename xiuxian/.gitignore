@@ -4,10 +4,5 @@ logs/
 .running.lock
 STOP
 ui-error.log
-ui-state.json
-ledger.json
-ledgers/
-开发资料/
-发布包/
 .env
 .env.*

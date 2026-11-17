@@ -1,0 +1,106 @@
+{
+  "day": "2026-10-28",
+  "night_started": 60,
+  "wander_started": 300,
+  "saint_beast_done": true,
+  "saint_beast_phase": "confirmed",
+  "sect_deadland_started": true,
+  "sect_herbs_started": true,
+  "normal_practice_phase": "running",
+  "normal_practice_done": true,
+  "sect_exchange_done": true,
+  "freegift_done": true,
+  "enlightenment_phase": "confirmed",
+  "enlightenment_before": "紫灵忽若醍醐灌顶，遂肆意挥毫，终成无名修炼诀。紫灵苦思冥想，悟道成功。当前悟道超过200次，无法感悟新的无名修炼诀。紫灵获得166750000修为。",
+  "enlightenment_done": true,
+  "lecture": true,
+  "treasure_started": true,
+  "hunt_started": 2,
+  "smallworld_unconfirmed": false,
+  "smallworld_started": 3,
+  "smallworld_rules": 2,
+  "sword_deferred": false,
+  "battle_exchange_rows": {
+    "basic": true
+  },
+  "battle_exchange_first_phase": "confirmed",
+  "night_stationed": [
+    "埋骨凶涧",
+    "消匿残域",
+    "陨神废墟",
+    "无矩虚境"
+  ],
+  "night_by_destination": {
+    "埋骨凶涧": 15,
+    "消匿残域": 15,
+    "陨神废墟": 15,
+    "无矩虚境": 15
+  },
+  "night_transactions": {
+    "埋骨凶涧": {
+      "phase": "running",
+      "before_quota": 60,
+      "rounds": 15,
+      "submitted_at": 1793156374.1781273,
+      "claimed": true
+    },
+    "消匿残域": {
+      "phase": "running",
+      "before_quota": 45,
+      "rounds": 15,
+      "submitted_at": 1793156392.3352215,
+      "claimed": true
+    },
+    "陨神废墟": {
+      "phase": "running",
+      "before_quota": 30,
+      "rounds": 15,
+      "submitted_at": 1793156409.668756,
+      "claimed": true
+    },
+    "无矩虚境": {
+      "phase": "running",
+      "before_quota": 15,
+      "rounds": 15,
+      "submitted_at": 1793156426.3444774,
+      "claimed": true
+    }
+  },
+  "night_statuses": {
+    "埋骨凶涧": "done",
+    "消匿残域": "done",
+    "陨神废墟": "done",
+    "无矩虚境": "done"
+  },
+  "ancestral": true,
+  "tree_claimed": true,
+  "observatory_done": true,
+  "star_way_phase": "submitted",
+  "buy_人参果": 2,
+  "ancestral_gift_submitted": true,
+  "ancestral_gift_done": true,
+  "ancestral_gift_recipients": [
+    "三角梅",
+    "山茶",
+    "思念",
+    "朱槿",
+    "海棠",
+    "绣球",
+    "芙蓉",
+    "长春花"
+  ],
+  "pond_started": 2,
+  "palace_cultivate_phase": "claimed",
+  "palace_cultivate_start_time": 1793157217.8103895,
+  "palace_cultivate_already_hint": false,
+  "palace_cultivate_reward_done": true,
+  "palace_cultivate_done": true,
+  "palace_court_phase": "claimed",
+  "palace_court_start_time": 1793157256.035846,
+  "palace_court_already_hint": false,
+  "palace_court_reward_done": true,
+  "palace_court_done": true,
+  "palace_garden_harvest_phase": "planted",
+  "sect_herbs_claimed": true,
+  "sect_deadland_claimed": true
+}

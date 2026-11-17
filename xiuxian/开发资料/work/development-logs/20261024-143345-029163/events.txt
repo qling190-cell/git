@@ -1,0 +1,13 @@
+14:33:48 点击 gamble_button
+14:33:51 点击 gamble_start
+14:33:55 点击 gamble_start
+14:33:59 点击 gamble_start
+14:34:03 点击 gamble_start
+14:34:07 点击 gamble_start
+14:34:11 点击 gamble_start
+14:34:15 点击 gamble_start
+14:34:19 点击 gamble_start
+14:34:23 点击 gamble_start
+14:34:27 点击 gamble_start
+14:34:29 [市肆博戏] 完成本次处理：本次10次，消耗20000灵石
+14:34:37 本次流程结束。报告目录：C:\Users\21413\Documents\Codex\2026-10-24\ni\outputs\太古仙尊实验版\logs\20261024-143345-029163

@@ -1,0 +1,13 @@
+{
+  "adb": "D:\\雷电\\leidian\\LDPlayer9\\adb.exe",
+  "device": "emulator-5554",
+  "package": "com.xyjx.hardtime.vivo",
+  "allow_food": true,
+  "wander_rounds": 300,
+  "allow_gamble_lingshi": true,
+  "gamble_limit": 10,
+  "forbidden_limit": 15,
+  "duel_limit": 5,
+  "allow_practice_lingshi": true,
+  "rules_version": 2
+}

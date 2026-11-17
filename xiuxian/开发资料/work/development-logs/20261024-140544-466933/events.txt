@@ -1,0 +1,45 @@
+14:05:53 点击 forbidden_progress_button
+14:05:58 点击 forbidden_auto
+14:06:00 点击 forbidden_start
+14:06:02 禁地已派遣：2/15
+14:06:04 点击 forbidden_auto
+14:06:06 点击 forbidden_start
+14:06:08 禁地已派遣：3/15
+14:06:10 点击 forbidden_auto
+14:06:12 点击 forbidden_start
+14:06:14 禁地已派遣：4/15
+14:06:16 点击 forbidden_auto
+14:06:18 点击 forbidden_start
+14:06:19 禁地已派遣：5/15
+14:06:22 点击 forbidden_auto
+14:06:24 点击 forbidden_start
+14:06:25 禁地已派遣：6/15
+14:06:28 点击 forbidden_auto
+14:06:30 点击 forbidden_start
+14:06:31 禁地已派遣：7/15
+14:06:34 点击 forbidden_auto
+14:06:36 点击 forbidden_start
+14:06:37 禁地已派遣：8/15
+14:06:40 点击 forbidden_auto
+14:06:42 点击 forbidden_start
+14:06:43 禁地已派遣：9/15
+14:06:46 点击 forbidden_auto
+14:06:47 点击 forbidden_start
+14:06:49 禁地已派遣：10/15
+14:06:52 点击 forbidden_auto
+14:06:53 点击 forbidden_start
+14:06:55 禁地已派遣：11/15
+14:06:57 点击 forbidden_auto
+14:06:59 点击 forbidden_start
+14:07:01 禁地已派遣：12/15
+14:07:03 点击 forbidden_auto
+14:07:05 点击 forbidden_start
+14:07:07 禁地已派遣：13/15
+14:07:09 点击 forbidden_auto
+14:07:11 点击 forbidden_start
+14:07:13 禁地已派遣：14/15
+14:07:15 点击 forbidden_auto
+14:07:17 点击 forbidden_start
+14:07:19 禁地已派遣：15/15
+14:07:20 [宗门禁地] 完成本次处理：已领取0组，已新增派遣14队；探索完成后需再次领取
+14:07:27 本次流程结束。报告目录：C:\Users\21413\Documents\Codex\2026-10-24\ni\outputs\太古仙尊实验版\logs\20261024-140544-466933

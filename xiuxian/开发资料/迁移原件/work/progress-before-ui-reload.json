@@ -1,0 +1,23 @@
+{
+  "day": "2026-10-25",
+  "completed": [
+    "signin",
+    "practice",
+    "travel",
+    "fishing_mortal",
+    "lecture",
+    "guard",
+    "quiz",
+    "transfer",
+    "forbidden",
+    "duel",
+    "sword",
+    "gamble",
+    "jade"
+  ],
+  "pending": {
+    "travel": true,
+    "forbidden": true
+  },
+  "current": "tower"
+}

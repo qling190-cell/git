@@ -1,0 +1,170 @@
+[
+  {
+    "name": "test_battle_exchange_first.py",
+    "code": 0,
+    "seconds": 3.7,
+    "output": "PASS: first row only, one item, daily dedup, zero/insufficient skips, legacy experience records ignored, unconfirmed retry blocked; native quota zero skipped\n"
+  },
+  {
+    "name": "test_celestial_close.py",
+    "code": 0,
+    "seconds": 0.6,
+    "output": "PASS: supplied celestial modal screenshot X detected: (645, 55)\n"
+  },
+  {
+    "name": "test_contracts.py",
+    "code": 0,
+    "seconds": 2.1,
+    "output": "PASS: original tasks kept in their realms, acyclic hierarchy, no repeated root returns, pause/resume, v5 UI and handlers.\n"
+  },
+  {
+    "name": "test_daily_modes.py",
+    "code": 0,
+    "seconds": 0.7,
+    "output": "PASS: all from first task; resume from exact cursor; no earlier deferred-task/lamp replay; interrupted and realm-boundary checkpoint; date reset; pending finish retained; consumption ledger untouched; CLI modes separate\n"
+  },
+  {
+    "name": "test_duel_transition.py",
+    "code": 0,
+    "seconds": 3.6,
+    "output": "PASS: direct result, exit->result, already returned root, ambiguous confirm blocked; native result confirmed: [(360, 911)]\n"
+  },
+  {
+    "name": "test_family_target.py",
+    "code": 0,
+    "seconds": 3.6,
+    "output": "PASS: reuse selected target, scroll only if needed, actual failed screenshot already selected target\n"
+  },
+  {
+    "name": "test_forbidden_battle_button.py",
+    "code": 0,
+    "seconds": 6.1,
+    "output": "PASS: actual failed modal battle button confirmed through full-context OCR: [(370, 844)]\n"
+  },
+  {
+    "name": "test_forbidden_gift_modal.py",
+    "code": 0,
+    "seconds": 8.5,
+    "output": "PASS: real gift modal collected at [(369, 879)] unknown front dialog blocks background exploration\n"
+  },
+  {
+    "name": "test_freegift.py",
+    "code": 0,
+    "seconds": 0.5,
+    "output": "PASS: missing entry skip, disappearing claimed tier, already-open paid tiers close, done panel close\n"
+  },
+  {
+    "name": "test_garden_chonghuo.py",
+    "code": 0,
+    "seconds": 3.1,
+    "output": "PASS native red 虫祸 state selects 除虫; healthy, water and fertilizer mappings preserved\n"
+  },
+  {
+    "name": "test_lecture_toast.py",
+    "code": 0,
+    "seconds": 5.5,
+    "output": "PASS: central reward, already done, no inference from bare labels/chat, daily dedup, parent returns; actual screenshot: 赏赐弟 获得功德值x900！ 宗门活动 手门训\n"
+  },
+  {
+    "name": "test_monitor_star_fixes.py",
+    "code": 0,
+    "seconds": 7.7,
+    "output": "PASS: real already-collected toast, no false success from label, real battle exit point, recovery uses observed exit\n"
+  },
+  {
+    "name": "test_palace_claim_v5.py",
+    "code": 0,
+    "seconds": 0.6,
+    "output": "PASS: court finish -> reward confirm; cultivate claim -> reward confirm; bottom buttons included; no button means no completion\n"
+  },
+  {
+    "name": "test_palace_order.py",
+    "code": 0,
+    "seconds": 0.5,
+    "output": "PASS: lamp first in complete palace flow; shared map throughout; one entry/exit; resume does not replay completed palace tasks\n"
+  },
+  {
+    "name": "test_palace_real_screens.py",
+    "code": 0,
+    "seconds": 4.0,
+    "output": "PASS actual failing screenshots: both start buttons detected; reward history does not trigger modal handling\n"
+  },
+  {
+    "name": "test_palace_receipt.py",
+    "code": 0,
+    "seconds": 4.0,
+    "output": "PASS: central real same-cultivation receipt accepted; pre-claim and historical chat rejected\n"
+  },
+  {
+    "name": "test_poison_deadland.py",
+    "code": 0,
+    "seconds": 8.0,
+    "output": "PASS: poison skip, cancel before X, never start/click confirm, pending cleared, normal deadland unchanged, recovery handles layers\nPASS native poison screenshot OCR and red X: [(625, 377)]\nPASS supplied shortage screenshot: cancel OCR [(231, 825)]\n"
+  },
+  {
+    "name": "test_practice_outcome.py",
+    "code": 0,
+    "seconds": 3.7,
+    "output": "PASS: native today-done toast, idle not falsely done; running/done results; daily dedup and unconfirmed submission blocks retry\n"
+  },
+  {
+    "name": "test_reward_recovery_priority.py",
+    "code": 0,
+    "seconds": 11.1,
+    "output": "PASS: foreground obtained-items modal confirms before trying background X: [(361, 773)]\n"
+  },
+  {
+    "name": "test_smallworld.py",
+    "code": 0,
+    "seconds": 0.6,
+    "output": "PASS: claim then explore, three-start cap, interrupted submission reconcile, native four options, premium second option blocked\n"
+  },
+  {
+    "name": "test_smallworld_entry.py",
+    "code": 0,
+    "seconds": 12.7,
+    "output": "PASS: unselected tab rejected, real footer required, captured travel frame rejected, open event dialog recovered\n"
+  },
+  {
+    "name": "test_star_forbidden.py",
+    "code": 0,
+    "seconds": 0.5,
+    "output": "PASS: orbit and forbidden public entries disabled; legacy engine material, shortage, narrative, battle and exit regressions retained\n"
+  },
+  {
+    "name": "test_star_rewards.py",
+    "code": 0,
+    "seconds": 0.6,
+    "output": "PASS: both seize actions, active boost, daily dedup, five exact collect buttons, last-city scroll; resume preserves completed checkpoint without replaying earlier tasks.\n"
+  },
+  {
+    "name": "test_supplement_tasks.py",
+    "code": 0,
+    "seconds": 7.0,
+    "output": "PASS: enlightenment receipt and daily dedup; beast confirmation and dedup; dew exact name before purchase, 6000 merit/one item, quota/manual/shortage/submission guards; native pages and item; shared-parent routes\n"
+  },
+  {
+    "name": "test_sword_schedule.py",
+    "code": 0,
+    "seconds": 1.0,
+    "output": "PASS: Monday before noon skip, noon open, explicit closed recovery, Tuesday unrestricted\n"
+  },
+  {
+    "name": "test_v5.py",
+    "code": 0,
+    "seconds": 19.8,
+    "output": "night_selected_failed ['埋骨凶涧', '消匿残域', '陨神废墟', '无矩虚境']\nnight_oppo_stationed ['埋骨凶涧', '消匿残域', '陨神废墟', '无矩虚境']\nnight_oppo_latest ['埋骨凶涧', '消匿残域', '陨神废墟', '无矩虚境']\nPASS v5: screenshots, new appearance, all-four 60 rounds, reservations, claims, partial failure, video order and hierarchy.\n"
+  },
+  {
+    "name": "test_waiting_states.py",
+    "code": 0,
+    "seconds": 0.5,
+    "output": "PASS: direct-start and confirmation treasure flows; exhausted hunt with grey start button.\n"
+  },
+  {
+    "name": "test_wander_count.py",
+    "code": 0,
+    "seconds": 1.7,
+    "output": "PASS: native 20 count; transient empty value retried; detection OCR fallback succeeds\n"
+  }
+]

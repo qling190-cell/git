@@ -1,0 +1,43 @@
+{
+  "day": "2026-10-25",
+  "completed": [
+    "signin",
+    "practice",
+    "travel",
+    "fishing_mortal",
+    "lecture",
+    "guard",
+    "quiz",
+    "transfer",
+    "forbidden",
+    "duel",
+    "sword",
+    "gamble",
+    "jade",
+    "demon",
+    "tower",
+    "treasure",
+    "family",
+    "familycare",
+    "raid",
+    "provisions",
+    "pond",
+    "stars",
+    "palace_garden",
+    "palace_cultivate",
+    "palace_court",
+    "palace_lamp",
+    "hunt",
+    "gifts"
+  ],
+  "pending": {
+    "travel": true,
+    "forbidden": true,
+    "hunt": false,
+    "treasure": true,
+    "family": true,
+    "palace_cultivate": false,
+    "palace_court": false
+  },
+  "current": null
+}
